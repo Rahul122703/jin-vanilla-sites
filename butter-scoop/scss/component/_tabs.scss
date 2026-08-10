@@ -1,0 +1,143 @@
+.widget-tabs {
+    .widget-menu-tab {
+        &:not(.tab-filter) {
+            @include d-flex();
+            justify-content: center;
+            gap: 44px;
+            padding-top: 26px;
+            margin-bottom: 69px;
+            .item-title {
+                font-size: 20px;
+                line-height: 28px;
+                color: var(--Primary-color);
+                font-weight: 500;
+                white-space: nowrap;
+                cursor: pointer;
+                position: relative;
+                font-family: $font-main2;
+                @include transition3();
+                letter-spacing: -0.1px;
+                &::after {
+                    content: "\e966";
+                    font-family: $fontIcon;
+                    position: absolute;
+                    top: -30px;
+                    left: 50%;
+                    transform: translateX(-50%) rotate(26deg);
+                    font-size: 22px;
+                    visibility: hidden;
+                    opacity: 0;
+                    @include transition3();
+                    color: var(--Secondary-color);
+                }
+                &.active,
+                &:hover {
+                    color: var(--Secondary-color);
+                    &::after {
+                        visibility: visible;
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+        &.tab-filter {
+            .item-title {
+                position: relative;
+                cursor: pointer;
+                &::after {
+                    position: absolute;
+                    content: "";
+                    width: 0;
+                    height: 3px;
+                    background-color: var(--White);
+                    @include transition3();
+                    bottom: -9px;
+                    left: 1px;
+                }
+                &.active,
+                &:hover {
+                    &::after {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+    &.style-2 {
+        .widget-menu-tab {
+            padding-bottom: 22px;
+            gap: 51px;
+            border-bottom: 1px solid var(--Border);
+            justify-content: start;
+            letter-spacing: 1.5px;
+            margin-bottom: 36px;
+            padding-top: 0px;
+            .item-title {
+                position: relative;
+                font-size: 23px;
+                line-height: 28px;
+                letter-spacing: -0.6px;
+                &::after {
+                    display: none;
+                }
+                &::before {
+                    position: absolute;
+                    content: "";
+                    bottom: -22px;
+                    left: auto;
+                    right: 0;
+                    width: 0;
+                    height: 3px;
+                    background-color: var(--Secondary-color);
+                    @include transition3;
+                }
+                &.active,
+                &:hover {
+                    color: var(--Secondary-color);
+                    &::before {
+                        width: 100%;
+                        left: 0;
+                    }
+                }
+            }
+        }
+    }
+    &.style-3 {
+        .widget-menu-tab {
+            @include d-flex();
+            flex-direction: column;
+            justify-content: flex-start;
+            padding-top: 0;
+            gap: 21px;
+            .item-title {
+                span {
+                    font-size: 17px;
+                    line-height: 28px;
+                    color: var(--Primary-color);
+                    font-weight: 600;
+                    position: relative;
+                    z-index: 1;
+                    @include transition3();
+                    letter-spacing: -0.3px;
+                }
+                &::after {
+                    left: -3px;
+                    top: 0px;
+                    transform: unset;
+                    font-size: 15px;
+                }
+                &.active,
+                &:hover {
+                    span {
+                        color: var(--Secondary-color);
+                        margin-left: 20px;
+                    }
+                    &::after {
+                        visibility: visible;
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+    }
+}
