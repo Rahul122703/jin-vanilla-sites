@@ -40,3 +40,12 @@
   object-fit: cover;
   object-position: center;
 }
+
+/* Bg image for the footer cards */
+.bg-artisan {
+  background-image: url("https://res.cloudinary.com/x0tlsf89/image/upload/v1786397766/ArtisanB-27.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 0px;
+}
