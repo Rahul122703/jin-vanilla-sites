@@ -43,21 +43,20 @@
  */
 
 /*VIDEO CHANGE*/
-.section-video .widget-video {
+/* .section-video .widget-video {
   max-width: 1737px;
   height: 544px;
   margin: 0 auto;
   position: relative;
   overflow: hidden;
   border-radius: 30px;
-  cursor: auto;
 }
 
 .section-video .widget-video video {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
+  position: fixed;
+  margin: 0;
+  padding: 0;
   object-fit: cover;
   object-position: center;
-}
+  pointer-events: none;
+} */
