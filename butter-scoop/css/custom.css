@@ -1,3 +1,4 @@
+/* Header Section */
 .page-title-home {
   position: relative;
 }
@@ -16,4 +17,26 @@
 
 .text-white {
   color: white;
+}
+
+/* Video Section */
+.butter-video-section {
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.butter-video {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 0;
+}
+
+.margin-top {
+  margin-top: -3px;
 }
