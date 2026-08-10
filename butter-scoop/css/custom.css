@@ -27,13 +27,14 @@
 }
 
 .media-video {
-  width: 100%;
+  /* width: calc(100% - 133rem); */
+  max-width: 1737px;
   height: 596px;
-  margin: 20px 0;
+  margin: 40px auto;
   padding: 0;
   overflow: hidden;
   border: none;
-  border-radius: 30px;
+  border-radius: 40px;
   box-sizing: border-box;
 }
 
