@@ -4663,6 +4663,7 @@ a.mapboxgl-ctrl-logo {
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 30px;
+  cursor: auto;
 }
 .section-video .widget-video .popup-youtube {
   opacity: 1;
