@@ -4654,7 +4654,7 @@ a.mapboxgl-ctrl-logo {
 
 /*section-video
 ------------------------------------------------------------------------*/
-/* .section-video .widget-video {
+.section-video .widget-video {
   max-width: 1737px;
   height: 544px;
   margin: 0 auto;
@@ -4674,7 +4674,7 @@ a.mapboxgl-ctrl-logo {
 .section-video .widget-video .popup-youtube {
   height: 116px;
   width: 116px;
-} */
+}
 
 /*section-top-seller
 ------------------------------------------------------------------------*/

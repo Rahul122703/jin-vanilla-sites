@@ -20,43 +20,23 @@
 }
 
 /* Video Section */
-/* .butter-video-section {
+.media-video-section {
   width: 100%;
-  max-width: 100%;
-  margin: 0 auto;
-  overflow: hidden;
-  line-height: 0;
+  padding: 0;
+  margin: 0;
 }
 
-.butter-video {
+.media-video {
+  width: 100%;
+  height: 596px;
+  overflow: hidden;
+  border-radius: 0px;
+}
+
+.media-video video {
   display: block;
   width: 100%;
   height: 100%;
   object-fit: cover;
   object-position: center;
-  border-radius: 0;
 }
-
-.margin-top {
-  margin-top: -3px;
-}
- */
-
-/*VIDEO CHANGE*/
-/* .section-video .widget-video {
-  max-width: 1737px;
-  height: 544px;
-  margin: 0 auto;
-  position: relative;
-  overflow: hidden;
-  border-radius: 30px;
-}
-
-.section-video .widget-video video {
-  position: fixed;
-  margin: 0;
-  padding: 0;
-  object-fit: cover;
-  object-position: center;
-  pointer-events: none;
-} */
