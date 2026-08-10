@@ -190,7 +190,7 @@
         &::after {
             position: absolute;
             content: "";
-            background-image: url(../images/item/item-page-title.png);
+            // background-image: url(../images/item/item-page-title.png); headerbefore
             background-repeat: no-repeat;
             background-size: 100% 100%;
             height: 100%;
@@ -280,7 +280,7 @@
                 height: 100%;
                 top: 0;
                 left: 0;
-                background-image: url(../images/item/item-home-page.png);
+                // background-image: url(../images/item/item-home-page.png); headerbefore
             }
             .content {
                 position: relative;

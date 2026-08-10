@@ -1,0 +1,19 @@
+.page-title-home {
+  position: relative;
+}
+.page-title-home .bg-video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+.page-title-home .swiper-container {
+  position: relative;
+  z-index: 1;
+}
+
+.text-white {
+  color: white;
+}
