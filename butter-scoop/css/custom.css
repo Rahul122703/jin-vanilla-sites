@@ -20,7 +20,7 @@
 }
 
 /* Video Section */
-.butter-video-section {
+/* .butter-video-section {
   width: 100%;
   max-width: 100%;
   margin: 0 auto;
@@ -39,4 +39,25 @@
 
 .margin-top {
   margin-top: -3px;
+}
+ */
+
+/*VIDEO CHANGE*/
+.section-video .widget-video {
+  max-width: 1737px;
+  height: 544px;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  border-radius: 30px;
+  cursor: auto;
+}
+
+.section-video .widget-video video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
 }
