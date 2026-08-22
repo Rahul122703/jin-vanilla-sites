@@ -54,3 +54,7 @@
   background-repeat: no-repeat;
   border-radius: 0px;
 }
+
+.bg-orange {
+  background-color: #f15c2b;
+}

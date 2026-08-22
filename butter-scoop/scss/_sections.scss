@@ -1093,7 +1093,9 @@
             grid-template-columns: repeat(2, 1fr);
             &.style-2 {
                 .content {
-                    background-image: url(../images/section/section-top-seller-3.1.jpg);
+                    // background-image: url(../images/section/section-top-seller-3.1.jpg); before image
+                    background-image: url(../images/extras/bg-orange-image.png);
+
                 }
             }
         }
@@ -1106,7 +1108,8 @@
             }
         }
         .content {
-            background-image: url(../images/section/section-top-seller-2.1.jpg);
+            background-image: url(../images/section/section-top-seller-2.1.jpg); 
+            // background-image: url("images/extras/ArtisanB-35.jpg");  
             background-repeat: no-repeat;
             background-size: cover;
             @include d-flex();

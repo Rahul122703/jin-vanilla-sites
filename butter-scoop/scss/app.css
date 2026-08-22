@@ -4658,7 +4658,7 @@ a.mapboxgl-ctrl-logo {
   max-width: 1737px;
   height: 544px;
   margin: 0 auto;
-  background-image: url(../images/section/asasa.jpg);
+  background-image: url(../images/extras/gelato1.JPG);
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
@@ -4769,7 +4769,8 @@ a.mapboxgl-ctrl-logo {
   grid-template-columns: repeat(2, 1fr);
 }
 .section-news .right .wrap-content.style-2 .content {
-  background-image: url(../images/section/section-top-seller-3.1.jpg);
+  /* background-image: url(../images/section/section-top-seller-3.1.jpg); before image */
+  background-image: url(../images/extras/bg-orange-image.png);
 }
 .section-news .right .image-wrap {
   height: 100%;
@@ -4782,6 +4783,7 @@ a.mapboxgl-ctrl-logo {
 }
 .section-news .right .content {
   background-image: url(../images/section/section-top-seller-2.1.jpg);
+  /* background-image: url("images/extras/ArtisanB-35.jpg"); */
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
