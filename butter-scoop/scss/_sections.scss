@@ -90,7 +90,7 @@
     }
     &.page-history {
         background-color: var(--Bg-7);
-        background-image: url(../images/item/history-page.png);
+        background-image: url(../images/item/history-page.webp);
         background-size: cover;
         background-repeat: no-repeat;
         padding-top: 200px;
@@ -190,7 +190,7 @@
         &::after {
             position: absolute;
             content: "";
-            // background-image: url(../images/item/item-page-title.png); headerbefore
+            // background-image: url(../images/item/item-page-title.webp); headerbefore
             background-repeat: no-repeat;
             background-size: 100% 100%;
             height: 100%;
@@ -280,7 +280,7 @@
                 height: 100%;
                 top: 0;
                 left: 0;
-                // background-image: url(../images/item/item-home-page.png); headerbefore
+                // background-image: url(../images/item/item-home-page.webp); headerbefore
             }
             .content {
                 position: relative;
@@ -319,7 +319,7 @@
 /* section-subcribe 
 -----------------------------------------------------------------*/
 .section-subcribe {
-    background-image: url(../images/section/section-subcribe.jpg);
+    background-image: url(../images/section/section-subcribe.webp);
     background-repeat: no-repeat;
     background-size: cover;
     padding: 75px 64px 70px 48px;
@@ -615,7 +615,7 @@
     }
     > .content {
         padding: 124px 30px 135px 84px;
-        background-image: url(../images/section/section-service.jpg);
+        background-image: url(../images/section/section-service.webp);
         background-size: cover;
         > p {
             max-width: 660px;
@@ -789,7 +789,7 @@
 ------------------------------------------------------------------------*/
 .section-founder {
     background-color: var(--Bg-7);
-    background-image: url(../images/section/section-founder-item.png);
+    background-image: url(../images/section/section-founder-item.webp);
     background-size: cover;
     .wrap-content {
         @include d-flex();
@@ -857,7 +857,7 @@
     &::after {
         position: absolute;
         content: "";
-        background-image: url(../images/item/section-category-produc.png);
+        background-image: url(../images/item/section-category-produc.webp);
         background-size: 100%;
         background-repeat: no-repeat;
         width: 100%;
@@ -902,7 +902,7 @@
         text-align: center;
         max-width: 475px;
         width: 100%;
-        background-image: url(../images/section/section-subcribe.jpg);
+        background-image: url(../images/section/section-subcribe.webp);
         background-repeat: no-repeat;
         background-size: cover;
         position: relative;
@@ -940,7 +940,7 @@
     &::after {
         content: "";
         position: absolute;
-        background-image: url(../images/section/section-icon-box.png);
+        background-image: url(../images/section/section-icon-box.webp);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
@@ -978,7 +978,7 @@
         max-width: 1737px;
         height: 544px;
         margin: 0 auto;
-        // background-image: url(../images/section/asasa.jpg);
+        // background-image: url(../images/section/asasa.webp);
         background-attachment: fixed;
         background-repeat: no-repeat;
         background-size: cover;
@@ -1093,8 +1093,8 @@
             grid-template-columns: repeat(2, 1fr);
             &.style-2 {
                 .content {
-                    // background-image: url(../images/section/section-top-seller-3.1.jpg); before image
-                    background-image: url(../images/extras/bg-orange-image.png);
+                    // background-image: url(../images/section/section-top-seller-3.1.webp); before image
+                    background-image: url(../images/extras/bg-orange-image.webp);
 
                 }
             }
@@ -1108,7 +1108,7 @@
             }
         }
         .content {
-            background-image: url(../images/section/section-top-seller-2.1.jpg); 
+            background-image: url(../images/section/section-top-seller-2.1.webp); 
             // background-image: url("images/extras/ArtisanB-35.jpg");  
             background-repeat: no-repeat;
             background-size: cover;
@@ -1143,7 +1143,7 @@
 ------------------------------------------------------------------------*/
 .section-testimonial {
     background-color: var(--Bg-7);
-    background-image: url(../images/section/section-testimonials.png);
+    background-image: url(../images/section/section-testimonials.webp);
     background-size: cover;
     padding-top: 169px;
     padding-bottom: 136px;
@@ -1445,7 +1445,7 @@
 .section-our-product {
     .swiper-container {
         padding: 34px 126px;
-        background-image: url(../images/section/section-subcribe.jpg);
+        background-image: url(../images/section/section-subcribe.webp);
         border-radius: 50px;
     }
     .widget-content-tab {

@@ -872,7 +872,7 @@ a:focus {
 #header-main::after {
   position: absolute;
   content: "";
-  /* background-image: url(../images/header/header.png); headerbefore*/
+  /* background-image: url(../images/header/header.webp); headerbefore*/
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -1051,7 +1051,7 @@ a:focus {
 .navigation > li::after {
   content: "";
   position: absolute;
-  background-image: url(../images/item/cream-up.png);
+  background-image: url(../images/item/cream-up.webp);
   background-size: 100%;
   width: 18px;
   height: 18px;
@@ -1066,7 +1066,7 @@ a:focus {
 .navigation > li::before {
   content: "";
   position: absolute;
-  background-image: url(../images/item/cream-down.png);
+  background-image: url(../images/item/cream-down.webp);
   background-size: 100%;
   width: 18px;
   height: 18px;
@@ -2401,7 +2401,7 @@ fieldset input.tf-input:focus {
   width: 100%;
 }
 #map .marker {
-  background-image: url(../images/item/marker.png);
+  background-image: url(../images/item/marker.webp);
   background-size: cover;
   width: 35px;
   height: 50px;
@@ -3090,7 +3090,7 @@ a.mapboxgl-ctrl-logo {
   font-size: 20px;
 }
 .box-info .icon {
-  background-image: url(../images/item/box-info.png);
+  background-image: url(../images/item/box-info.webp);
   background-repeat: no-repeat;
   background-size: cover;
   width: 109px;
@@ -3217,7 +3217,7 @@ a.mapboxgl-ctrl-logo {
   padding-top: 43px;
 }
 .box-team .icon {
-  background-image: url(../images/item/box-team.png);
+  background-image: url(../images/item/box-team.webp);
   width: 109px;
   height: 101px;
   margin: 0 auto 25px;
@@ -3460,7 +3460,7 @@ a.mapboxgl-ctrl-logo {
 }
 
 .wg-404 {
-  background-image: url(../images/section/404.jpg);
+  background-image: url(../images/section/404.webp);
   background-size: cover;
   min-height: 100vh;
 }
@@ -3807,7 +3807,7 @@ a.mapboxgl-ctrl-logo {
 }
 .main-content.page-history {
   background-color: var(--Bg-7);
-  background-image: url(../images/item/history-page.png);
+  background-image: url(../images/item/history-page.webp);
   background-size: cover;
   background-repeat: no-repeat;
   padding-top: 200px;
@@ -3908,7 +3908,7 @@ a.mapboxgl-ctrl-logo {
 .page-title .left::after {
   position: absolute;
   content: "";
-  /* background-image: url(../images/item/item-page-title.png); headerbefore */
+  /* background-image: url(../images/item/item-page-title.webp); headerbefore */
   background-repeat: no-repeat;
   background-size: 100% 100%;
   height: 100%;
@@ -3993,7 +3993,7 @@ a.mapboxgl-ctrl-logo {
   height: 100%;
   top: 0;
   left: 0;
-  /* background-image: url(../images/item/item-home-page.png); headerbefore */
+  /* background-image: url(../images/item/item-home-page.webp); headerbefore */
 }
 .page-title.home-page-title .left .content {
   position: relative;
@@ -4026,7 +4026,7 @@ a.mapboxgl-ctrl-logo {
 /* section-subcribe 
 -----------------------------------------------------------------*/
 .section-subcribe {
-  background-image: url(../images/section/section-subcribe.jpg);
+  background-image: url(../images/section/section-subcribe.webp);
   background-repeat: no-repeat;
   background-size: cover;
   padding: 75px 64px 70px 48px;
@@ -4327,7 +4327,7 @@ a.mapboxgl-ctrl-logo {
 }
 .section-deliver > .content {
   padding: 124px 30px 135px 84px;
-  background-image: url(../images/section/section-service.jpg);
+  background-image: url(../images/section/section-service.webp);
   background-size: cover;
 }
 .section-deliver > .content > p {
@@ -4474,7 +4474,7 @@ a.mapboxgl-ctrl-logo {
 ------------------------------------------------------------------------*/
 .section-founder {
   background-color: var(--Bg-7);
-  background-image: url(../images/section/section-founder-item.png);
+  background-image: url(../images/section/section-founder-item.webp);
   background-size: cover;
 }
 .section-founder .wrap-content {
@@ -4543,7 +4543,7 @@ a.mapboxgl-ctrl-logo {
 .section-category-product::after {
   position: absolute;
   content: "";
-  background-image: url(../images/item/section-category-produc.png);
+  background-image: url(../images/item/section-category-produc.webp);
   background-size: 100%;
   background-repeat: no-repeat;
   width: 100%;
@@ -4589,7 +4589,7 @@ a.mapboxgl-ctrl-logo {
   text-align: center;
   max-width: 475px;
   width: 100%;
-  background-image: url(../images/section/section-subcribe.jpg);
+  background-image: url(../images/section/section-subcribe.webp);
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
@@ -4626,7 +4626,7 @@ a.mapboxgl-ctrl-logo {
 .section-box-icon::after {
   content: "";
   position: absolute;
-  background-image: url(../images/section/section-icon-box.png);
+  background-image: url(../images/section/section-icon-box.webp);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -4658,7 +4658,7 @@ a.mapboxgl-ctrl-logo {
   max-width: 1737px;
   height: 544px;
   margin: 0 auto;
-  background-image: url(../images/extras/gelato1.JPG);
+  background-image: url(../images/extras/gelato1.webp);
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
@@ -4769,8 +4769,8 @@ a.mapboxgl-ctrl-logo {
   grid-template-columns: repeat(2, 1fr);
 }
 .section-news .right .wrap-content.style-2 .content {
-  /* background-image: url(../images/section/section-top-seller-3.1.jpg); before image */
-  background-image: url(../images/extras/bg-orange-image.png);
+  /* background-image: url(../images/section/section-top-seller-3.1.webp); before image */
+  background-image: url(../images/extras/bg-orange-image.webp);
 }
 .section-news .right .image-wrap {
   height: 100%;
@@ -4782,7 +4782,7 @@ a.mapboxgl-ctrl-logo {
   object-fit: cover;
 }
 .section-news .right .content {
-  background-image: url(../images/section/section-top-seller-2.1.jpg);
+  background-image: url(../images/section/section-top-seller-2.1.webp);
   /* background-image: url("images/extras/ArtisanB-35.jpg"); */
   background-repeat: no-repeat;
   background-size: cover;
@@ -4811,7 +4811,7 @@ a.mapboxgl-ctrl-logo {
 ------------------------------------------------------------------------*/
 .section-testimonial {
   background-color: var(--Bg-7);
-  background-image: url(../images/section/section-testimonials.png);
+  background-image: url(../images/section/section-testimonials.webp);
   background-size: cover;
   padding-top: 169px;
   padding-bottom: 136px;
@@ -5077,7 +5077,7 @@ a.mapboxgl-ctrl-logo {
 ------------------------------------------------------------------------*/
 .section-our-product .swiper-container {
   padding: 34px 126px;
-  background-image: url(../images/section/section-subcribe.jpg);
+  background-image: url(../images/section/section-subcribe.webp);
   border-radius: 50px;
 }
 .section-our-product .widget-content-tab {
