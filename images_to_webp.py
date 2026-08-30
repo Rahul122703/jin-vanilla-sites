@@ -8,10 +8,10 @@ to .webp, and rewrites every reference in the code to point to the new
 .webp path.
 
 Usage:
-    python3 images_to_webp.py /path/to/project-root
-    python3 images_to_webp.py /path/to/project-root --dry-run
-    python3 images_to_webp.py /path/to/project-root --quality 82
-    python3 images_to_webp.py /path/to/project-root --delete-originals
+    python images_to_webp.py butter-scoop
+    python images_to_webp.py butter-scoop --dry-run
+    python images_to_webp.py butter-scoop --quality 82
+    python images_to_webp.py butter-scoop --delete-originals
 
 By default originals are KEPT on disk (safer). Pass --delete-originals
 to remove them once converted.
