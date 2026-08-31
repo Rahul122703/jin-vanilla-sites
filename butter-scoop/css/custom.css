@@ -58,3 +58,77 @@
 .bg-orange {
   background-color: #f15c2b;
 }
+
+
+/*section-post
+------------------------------------------------------------------------*/
+.section-post .left {
+  overflow: hidden;
+}
+
+.section-post .left img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+
+.section-news .left {
+  position: relative;
+  overflow: hidden;
+}
+
+.section-news .left .image-wrap {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.section-news .left .image-wrap img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+
+/*bg-image-parallx-post
+------------------------------------------------------------------------*/
+.section-video .widget-video {
+  position: relative;
+  max-width: 1737px;
+  width: 100%;
+  height: 544px;
+  margin: 0 auto;
+  border-radius: 30px;
+  overflow: hidden;
+  cursor: auto;
+}
+
+.section-video .widget-video .parallax-background {
+  position: absolute;
+  inset: 0;
+  clip-path: inset(0);
+  z-index: 0;
+}
+
+.section-video .widget-video .parallax-background::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-image: url("../images/extras/gelato1.webp");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.section-video .widget-video > *:not(.parallax-background) {
+  position: relative;
+  z-index: 1;
+}
