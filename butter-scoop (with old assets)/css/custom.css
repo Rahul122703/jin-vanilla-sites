@@ -1,0 +1,60 @@
+/* Header Section */
+.page-title-home {
+  position: relative;
+}
+.page-title-home .bg-video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+.page-title-home .swiper-container {
+  position: relative;
+  z-index: 1;
+}
+
+.text-white {
+  color: white;
+}
+
+/* Video Section */
+.media-video-section {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.media-video {
+  /* width: calc(100% - 133rem); */
+  max-width: 1737px;
+  height: 596px;
+  margin: 40px auto;
+  padding: 0;
+  overflow: hidden;
+  border: none;
+  border-radius: 40px;
+  box-sizing: border-box;
+}
+
+.media-video video {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* Bg image for the footer cards */
+.bg-artisan {
+  background-image: url("https://res.cloudinary.com/x0tlsf89/image/upload/v1786397766/ArtisanB-27.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 0px;
+}
+
+.bg-orange {
+  background-color: #f15c2b;
+}

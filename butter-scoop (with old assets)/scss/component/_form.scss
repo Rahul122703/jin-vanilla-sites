@@ -1,0 +1,148 @@
+form {
+    position: relative;
+    z-index: 30;
+    textarea,
+    input[type="text"],
+    input[type="password"],
+    input[type="datetime"],
+    input[type="datetime-local"],
+    input[type="date"],
+    input[type="month"],
+    input[type="time"],
+    input[type="week"],
+    input[type="number"],
+    input[type="email"],
+    input[type="url"],
+    input[type="search"],
+    input[type="tel"],
+    input[type="color"] {
+        outline: none;
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        box-shadow: none;
+        width: 100%;
+        height: 50px;
+        padding: 10px 23px 8px;
+        font-size: 13px;
+        font-weight: 500;
+        line-height: 28px;
+        background-color: var(--White);
+        border: 1px solid var(--White);
+        border-radius: 25px;
+        color: var(--Primary-color);
+        overflow: hidden;
+        margin-bottom: 0;
+        @include transition3();
+        &::placeholder {
+            font-size: 13px;
+            font-weight: 500;
+            line-height: 28px;
+            color: var(--Primary-color);
+        }
+        &:focus {
+            border: 1px solid var(--Secondary-color);
+            @include box-shadow();
+        }
+    }
+    .cols {
+        @include flex(center, center);
+        gap: 23px 21px;
+        width: 100%;
+        &.cols-two {
+            > * {
+                width: 50%;
+            }
+        }
+    }
+    button,
+    input[type="button"],
+    input[type="reset"],
+    input[type="submit"] {
+        background-color: transparent;
+        overflow: hidden;
+        padding: 0;
+    }
+    textarea {
+        height: 213px;
+    }
+}
+fieldset {
+    margin-bottom: 0px;
+    width: 100%;
+    textarea,
+    input {
+        &.tf-input {
+            @include transition3();
+            border: 1px solid var(--Border);
+            &:focus {
+                border: 1px solid var(--Secondary-color);
+            }
+        }
+    }
+}
+
+.form-send-email {
+    fieldset input {
+        padding-right: 90px;
+        padding-left: 23px;
+        font-size: 13px;
+        line-height: 29px;
+        &::placeholder {
+            font-size: 15px;
+            line-height: 29px;
+            font-weight: 400;
+        }
+        &:focus {
+            border: 1px solid var(--Secondary-color);
+        }
+    }
+    .button-submit {
+        position: absolute;
+        right: 5px;
+        top: 50%;
+        @include center(0, -50%);
+        button {
+            color: var(--White);
+            cursor: pointer;
+        }
+    }
+}
+.form-send-message {
+    fieldset input {
+        padding-right: 90px;
+        padding-left: 23px;
+        font-size: 15px;
+        line-height: 29px;
+        &::placeholder {
+            font-size: 15px;
+            line-height: 29px;
+            font-weight: 400;
+            color: var(--Black);
+        }
+        &:focus {
+            border: 1px solid var(--Secondary-color);
+        }
+    }
+    fieldset textarea {
+        font-size: 15px;
+        line-height: 29px;
+        font-weight: 400;
+        color: var(--Black);
+        &::placeholder {
+            font-size: 15px;
+            line-height: 29px;
+            font-weight: 400;
+            color: var(--Black);
+        }
+    }
+    .button-submit {
+        position: absolute;
+        right: 5px;
+        top: 50%;
+        @include center(0, -50%);
+        button {
+            color: var(--White);
+            cursor: pointer;
+        }
+    }
+}

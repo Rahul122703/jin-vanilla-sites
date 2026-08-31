@@ -1,0 +1,1916 @@
+<!doctype html>
+<!--[if IE 8]><html class="ie" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US">
+  <!--<![endif]-->
+
+  <head>
+    <!-- Basic Page Needs -->
+    <meta charset="utf-8" />
+    <!--[if IE
+      ]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"
+    /><![endif]-->
+
+    <title>Butter & Scoop</title>
+
+    <meta name="Butter & Scoop" content="Butter & Scoop" />
+
+    <!-- Mobile Specific Metas -->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
+
+    <!-- Theme Style -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="css/animate.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/swiper-bundle.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/magnific-popup.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/aos.css" />
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    <link rel="stylesheet" type="text/css" href="scss/app.css" />
+    <link rel="stylesheet" type="text/css" href="scss/app.css.map" />
+    <link rel="stylesheet" type="text/css" href="css/menu.css" />
+
+    <!-- Custom Overrides -->
+    <link rel="stylesheet" href="css/custom.css" />
+    
+    <!-- Font -->
+    <link rel="stylesheet" href="font/fonts.css" />
+
+    <!-- Icon -->
+    <link rel="stylesheet" type="text/css" href="icons/icomoon/style.css" />
+    <link
+      rel="stylesheet"
+      href="css/fontawesome-free-6.4.2-web/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="css/fontawesome-free-6.4.2-web/css/all.min.css"
+    />
+
+    <!-- Favicon and Touch Icons  -->
+    <link rel="shortcut icon" href="icons/ice-cream-cone.svg" />
+    <link rel="apple-touch-icon-precomposed" href="icons/ice-cream-cone.svg" />
+
+    <style>
+      [data-aos] {
+        will-change: transform, opacity;
+        transform: translateZ(0);
+        backface-visibility: hidden;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- wrapper -->
+    <div id="wrapper">
+      <!-- preload -->
+      <div id="loading">
+        <div id="loading-center">
+          <div class="loader-container">
+            <div class="wrap-loader">
+              <div class="loader"></div>
+              <div class="icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  width="62"
+                  height="62"
+                  viewBox="0 0 62 62"
+                >
+                  <image
+                    id="ice-cream-cup"
+                    width="62"
+                    height="62"
+                    xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD4AAAA+CAYAAABzwahEAAAE4klEQVRoge2aWYgcRRjHf9nEY02hSdB4PigaYogHGsRsREFXtIhrcBNdUUQK8UEfPCEaxZBoRBAPUNA8BGJJhJjFhzUvqVWEiFn2weCBQh4k4gWKBlGpGCOJSsXqpXemuqd7pnt3enb+MDB19vfvqn/VV1/1LKYAVqq5wH3AILAIOCHlqQ8Io7eVbdWcsh9gpVoGjADnZKh+ANhetk2UTdxKtRj4ADglY5P9wugjZdoUoafk/jfnIO2wyEp1XIn2TKA04laqi4BrczZbADxYkkmTUOaIX91kuxetVC9bqc4v2J5JKFPjp7fQ9hH3s1J9AuwAtgmjfyzQttZH3Eq1wEq13kr1ZU3R4Vb7Bi4Hnge+tVJpK9WFBfR5DE3v41Yq1/Z+4Flgvs9eKIz+xZevAd4pylCPo8DrwEZh9K+tdNTUiFupjvdT8LUYaYdLYv8/Av5pxbgAZjsHB/jCSiVb6Sg3cSvVbE/6tkDx9dEfYfTPgGnFuBScBeyyUm3yMy83mhnxtcAtCWW3W6nifT5XFNMEPAUM+xmYC7mIW6mcn70xpcp5wKooIYwe83IoE7e6tSQv+bwjvrbBAcNhU4339SjwfsnkbwbeyDPtMxO3UgngrgxVncf2ZJQQRv8NDABvZn1Wk7gTeCJr08xvyK+iuzJWd6v5oDB6Z00fK92M8PtzGXDPvcZLrDDiGxrouxaHgNXC6LqV3Up1KdAPOIdkIbACOK2gF/E1cLEw+s+0SnmIb/bBhDxwDsc64CVh9L8pfbvDyecZz+xZ8LQwOnWQ8ixuzfj1bs9/ARizUi1PquS9sD1N9J+Ex6xUZ6ZVyEPmuxYM6QPGrVROey6sNCqM/iYqtFKdDVzXQv+16AUeBh5PqpBnqrstY2eGqlnxG/A98AfgNC8K7NvhdycdYbQNFSZOdStVr5Uq7nuPFex7z3OLEHBVCaTxkZ9VSYVpGl8PqCjhdbi7cPPKxR1JvQeJW6lO9cGAgZqirdXhfAz9Sa5s0oi7betEH/xbEcvf4XVZFbhF7oo8xFfH/k8E/3zod12FiDssC2XWEbdSuUXhsljWkJXqglh6+xQcOopEMFwVGvGlNWm35b0SJbwHdjdQaPCvRJyblfgZgbyVVqqhKCGM/gm4ye/B7Y75IftCxJMO9FvisW5h9Kc+1HSgzYn3hjJDxIOeDnAy8K6Val6UIYz+GFjuDxiVQoj4/hQCS32Qb+I+TBjt6l8JPAP81YbkgzaFiH+VMur4Ef7QSjWxFgijDwujN/i771fbTPvBRbiOuN+rRxt05g4Vn1mp+mva/iCMfsgvkIP+tnTvNL+I4Kky6VjqYmv3Zuj0aChTGH3IfwwwEuX5AOTcrNYWiHaUXxdTjllL+oadzm9IcFw6Ec75es9pfAtwzwybc1t7AmfumYCBnvjKO4MwMscHHd6OfZ301jRtO2XiYOz6ywUhd9dFWZf0Dbubjxs7hvL/GN03PjTpQ4KQy1q1gGIW1HHqEo9hr9dEp+Cg55ROfN/40JGC77GmG3s8p3TiHp003YNcusRr0Ck6D+qbJOIdpPOgvmlwadgJ0z2RQ5d4AFXXeaK+SSPeATpP1DcZPv6p8nRPtb1LPAFV1XmqvmlEvMI6T9U3GT/wq+J0b2jzjCWe5ctGpxV38XZSMTaVDvfxbqq+Af4D5f9Sg2C2aXcAAAAASUVORK5CYII="
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /preload -->
+
+      <header id="header-main" class="header header-fixed style-absolute">
+        <div class="wrapper">
+          <div class="tf-top-bar">
+            <div style="display: none" class="icon left">
+              <svg
+                id="Capa_1"
+                enable-background="new 0 0 496.996 496.996"
+                height="512"
+                viewBox="0 0 496.996 496.996"
+                width="512"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g>
+                  <path
+                    d="m453.062 43.934-212.132 212.132c58.579 58.579 153.553 58.579 212.132 0s58.579-153.553 0-212.132z"
+                    fill="#25d4f2"
+                  />
+                  <path
+                    d="m431.849 234.853c58.579-58.579 68.076-144.056 21.213-190.919-58.579-58.579-153.553-58.579-212.132 0s-58.579 153.553 0 212.132c46.863 46.863 132.34 37.365 190.919-21.213z"
+                    fill="#6ee2f6"
+                  />
+                  <path
+                    d="m3.928 470.919-2.142 3.981c-3.055 5.68-2.191 12.912 2.604 17.707s12.027 5.659 17.707 2.604l182.701-98.311-92.113-26.006z"
+                    fill="#ff7a3c"
+                  />
+                  <path
+                    d="m279.821 217.175-167.136 153.718c28.664 15.885 60.253 24.555 92.113 26.006l165.625-89.123z"
+                    fill="#ff9a42"
+                  />
+                  <path
+                    d="m73.069 342.427-69.141 128.492 152.348-81.978z"
+                    fill="#ff9a42"
+                  />
+                  <path
+                    d="m189.219 126.574-116.15 215.853c24.539 22.368 53.095 37.869 83.207 46.514l191.997-103.314z"
+                    fill="#ffba48"
+                  />
+                  <path
+                    d="m405.332 293.189c-5.081-5.081-9.593-7.647-13.884-9.229l-49.756 30.442 21.213 21.213c11.716 11.716 30.711 11.716 42.426 0s11.717-30.71.001-42.426z"
+                    fill="#6ee2f6"
+                  />
+                  <path
+                    d="m384.119 314.402c8.237-8.237 10.674-20.069 7.329-30.442-9.893-3.649-18.598-2.039-30.312-13.753-16.795-16.795-6.188-27.401-22.983-44.196-16.794-16.794-27.401-6.187-44.195-22.981-16.793-16.793-6.187-27.4-22.98-44.193s-27.399-6.186-44.192-22.979-6.187-27.4-22.98-44.193c-11.716-11.716-30.711-11.716-42.426 0s-11.716 30.711 0 42.426l68.943 68.943c11.716 11.716 11.716 30.711 0 42.426l-31.52 31.52c-5.711 5.711-6.236 15.014-.8 20.988 5.804 6.378 15.686 6.553 21.714.525l31.82-31.82c11.716-11.716 30.711-11.716 42.426 0l47.73 47.73c11.716 11.715 30.71 11.715 42.426-.001z"
+                    fill="#b6f1fb"
+                  />
+                </g>
+              </svg>
+            </div>
+            <p style="display: none">
+              Free shipping on orders over $50 in the city, only for the first
+              order of the week
+            </p>
+            <div style="display: none" class="icon right">
+              <svg
+                id="Capa_1"
+                enable-background="new 0 0 496.996 496.996"
+                height="512"
+                viewBox="0 0 496.996 496.996"
+                width="512"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g>
+                  <path
+                    d="m453.062 43.934-212.132 212.132c58.579 58.579 153.553 58.579 212.132 0s58.579-153.553 0-212.132z"
+                    fill="#25d4f2"
+                  />
+                  <path
+                    d="m431.849 234.853c58.579-58.579 68.076-144.056 21.213-190.919-58.579-58.579-153.553-58.579-212.132 0s-58.579 153.553 0 212.132c46.863 46.863 132.34 37.365 190.919-21.213z"
+                    fill="#6ee2f6"
+                  />
+                  <path
+                    d="m3.928 470.919-2.142 3.981c-3.055 5.68-2.191 12.912 2.604 17.707s12.027 5.659 17.707 2.604l182.701-98.311-92.113-26.006z"
+                    fill="#ff7a3c"
+                  />
+                  <path
+                    d="m279.821 217.175-167.136 153.718c28.664 15.885 60.253 24.555 92.113 26.006l165.625-89.123z"
+                    fill="#ff9a42"
+                  />
+                  <path
+                    d="m73.069 342.427-69.141 128.492 152.348-81.978z"
+                    fill="#ff9a42"
+                  />
+                  <path
+                    d="m189.219 126.574-116.15 215.853c24.539 22.368 53.095 37.869 83.207 46.514l191.997-103.314z"
+                    fill="#ffba48"
+                  />
+                  <path
+                    d="m405.332 293.189c-5.081-5.081-9.593-7.647-13.884-9.229l-49.756 30.442 21.213 21.213c11.716 11.716 30.711 11.716 42.426 0s11.717-30.71.001-42.426z"
+                    fill="#6ee2f6"
+                  />
+                  <path
+                    d="m384.119 314.402c8.237-8.237 10.674-20.069 7.329-30.442-9.893-3.649-18.598-2.039-30.312-13.753-16.795-16.795-6.188-27.401-22.983-44.196-16.794-16.794-27.401-6.187-44.195-22.981-16.793-16.793-6.187-27.4-22.98-44.193s-27.399-6.186-44.192-22.979-6.187-27.4-22.98-44.193c-11.716-11.716-30.711-11.716-42.426 0s-11.716 30.711 0 42.426l68.943 68.943c11.716 11.716 11.716 30.711 0 42.426l-31.52 31.52c-5.711 5.711-6.236 15.014-.8 20.988 5.804 6.378 15.686 6.553 21.714.525l31.82-31.82c11.716-11.716 30.711-11.716 42.426 0l47.73 47.73c11.716 11.715 30.71 11.715 42.426-.001z"
+                    fill="#b6f1fb"
+                  />
+                </g>
+              </svg>
+            </div>
+          </div>
+          <div class="header-inner">
+            <div class="header-inner-wrap">
+            <nav class="main-menu">
+                <ul class="navigation">
+                  <li class="current-menu"><a href="#">Home</a></li>
+
+                  <!-- <li class="has-child"><a href="javascript:void(0);">Shop </a>
+                                    <ul class="sub-menu">
+                                        <li><a href="shop.html">Shop</a></li>
+                                        <li><a href="shop-detail.html">Shop Detail</a></li>
+                                    </ul>
+                                </li> -->
+                  <!-- <li class="has-child"><a href="javascript:void(0);">Blog</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="blog.html">Blog Grid</a></li>
+                                        <li><a href="blog-single.html">Blog Single</a></li>
+                                    </ul>
+                                </li> -->
+                  <li><a href="contact-us.html">Contact</a></li>
+                </ul>
+              </nav>
+              <div class="nav-button mobile">
+                <button
+                  id="hamburger"
+                  class="hamburger-btn"
+                  aria-label="Toggle navigation"
+                >
+                  <span class="hamburger-line line-1"></span>
+                  <span class="hamburger-line line-2"></span>
+                  <span class="hamburger-line line-3"></span>
+                </button>
+              </div>
+              <div class="header-logo">
+                <a href="index.html" class="site-logo">
+                  <img
+                    id="logo_header"
+                    alt=""
+                    src="images/logo1.webp"
+                    data-retina="images/logo1.webp"
+                  />
+                </a>
+              </div>
+              <div class="header-right">
+
+                <a class="tf-btn" target="_blank" href="https://www.makeitbutter.com/jun-s-macaron-gelato/fort-lee-nj">
+                  <span style="color: white; background-color: #f15c2b"
+                    >START ORDER</span
+                  >
+                </a>
+                <div class="header-welcome">
+                  <div class="btn-open-welcome">
+                    <i class="icon-ice-cream-icon-menu"></i>
+                  </div>
+                  <div class="wg-welcome">
+                    <div class="inner">
+                      <div class="btn-close-welcome">
+                        <i class="icon-close"></i>
+                      </div>
+                      <h4 class="title">
+                        Welctome To <br />
+                        Butter & Scoop
+                      </h4>
+                      <p class="text">
+                        Where the warmth of the bakery meets the chill of the
+                        creamery. Step inside for an unforgettable lineup of
+                        freshly loaded pastries, gourmet ice cream, and sweet
+                        creations crafted right here in Fort Lee.
+                      </p>
+                      <div class="icon">
+                        <i class="icon-ice-creamdwwdw"></i>
+                      </div>
+                      <div class="contact">
+                        <p class="number-call fw-bold font-cormorant">
+                          +(973) 630-0363
+                        </p>
+                        <p class="address">250 Main St, Fort Lee, NJ 07024A</p>
+                        <p class="email">info@butterandscoop.com</p>
+                      </div>
+                      <div class="icon">
+                        <i class="icon-ice-creamdwwdw"></i>
+                      </div>
+                      <div class="schedule">
+                        <p>Monday - Friday: 7:00am - 10:00pm</p>
+                        <p>Saturday - Sunday: 7:00am - 10:00pm</p>
+                        <!--<p>Holiday: Closes</p>-->
+                      </div>
+                      <ul class="tf-social style-2">
+
+                        <li>
+                          <a href="https://www.instagram.com/butternscoop/">
+                            <i class="icon-instagram"></i>
+                          </a>
+                        </li>
+
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="nav-button">
+                <button
+                  id="hamburger"
+                  class="hamburger-btn"
+                  aria-label="Toggle navigation"
+                >
+                  <span class="hamburger-line line-1"></span>
+                  <span class="hamburger-line line-2"></span>
+                  <span class="hamburger-line line-3"></span>
+                </button>
+              </div>
+              </div>
+            </div>
+            <div class="mobile-nav-wrap">
+              <div>
+                <div id="menuOverlay" class="menu-overlay">
+                  <div class="menu-logo">
+                    <a href="index.html">
+                      <img src="images/blog/logo/logo3.webp" alt="Logo" />
+                    </a>
+                  </div>
+
+                  <div class="menu-container">
+                    <a href="index.html" class="menu-link">
+                      <span>Home</span>
+                    </a>
+
+                    <a href="#contact" class="menu-link">
+                      <span>Contact</span>
+                    </a>
+                    <a
+                      href="https://www.makeitbutter.com/jun-s-macaron-gelato/fort-lee-nj"
+                      class="menu-link"
+                      target="_blank"
+                      rel="noopener"
+                    >
+                      <span>Order Now</span>
+                    </a>
+                  </div>
+                  <div class="menu-bottom">
+                    <div class="menu-address">
+                      <span>250 Main St,</span><span>Fort Lee, NJ 07024</span>
+                    </div>
+                    <div class="menu-timings">
+                      <li><span>Monday - Thursday :</span> 7 AM - 9 PM</li>
+                      <li><span>Friday - Saturday :</span> 7 AM - 10 PM</li>
+                    </div>
+
+                    <!-- Social Icons -->
+                    <div id="socialIcons" class="social-icons">
+                      <a
+                        href="https://www.facebook.com"
+                        class="social-icon-circle"
+                        aria-label="Facebook"
+                        target="_blank"
+                        rel="noopener"
+                      >
+                        <i class="fa-brands fa-facebook-f"></i>
+                      </a>
+                      <a
+                        href="https://www.instagram.com/butternscoop/"
+                        class="social-icon-circle"
+                        aria-label="Instagram"
+                        target="_blank"
+                        rel="noopener"
+                      >
+                        <i class="fa-brands fa-instagram"></i>
+                      </a>
+                      <a
+                        href="tel:973-630-0363"
+                        class="social-icon-circle"
+                        aria-label="Phone"
+                        target="_blank"
+                        rel="noopener"
+                      >
+                        <i class="fa-solid fa-phone"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- <div class="top-nav-mobile">
+                  <a href="index.html" rel="home" class="main-logo">
+                    <img
+                      id="mobile-logo_header"
+                      alt=""
+                      src="images/logo1.webp"
+                      data-retina="images/logo1.webp"
+                    />
+                  </a>
+                  <div class="mobile-nav-close">
+                    <i class="icon-close"></i>
+                  </div>
+                </div>
+                <nav id="mobile-main-nav" class="mobile-main-nav">
+                  <ul id="menu-mobile-menu" class="menu">
+                    <li class="menu-item current-menu-item">
+                      <a class="item-menu-mobile" href="index.html">Home</a>
+                    </li>
+                    <li class="menu-item menu-item-has-children-mobile">
+                      <a class="item-menu-mobile" href="javascript:void(0);"
+                        >Pages</a
+                      >
+                      <ul class="sub-menu-mobile">
+                        <li class="menu-item">
+                          <a href="about.html">About Us</a>
+                        </li>
+                        <li class="menu-item">
+                          <a href="portfolio.html">Portfolio</a>
+                        </li>
+                        <li class="menu-item">
+                          <a href="career.html">Carreer</a>
+                        </li>
+                        <li class="menu-item">
+                          <a href="history.html">Histoty</a>
+                        </li>
+                        <li class="menu-item">
+                          <a href="our-team.html">Teams Member </a>
+                        </li>
+                        <li class="menu-item"><a href="faq.html">FAQs</a></li>
+                        <li class="menu-item"><a href="404.html">404</a></li>
+                      </ul>
+                    </li>
+
+                    <li class="menu-item menu-item-has-children-mobile">
+                      <a class="item-menu-mobile" href="javascript:void(0);"
+                        >SHOP</a
+                      >
+                      <ul class="sub-menu-mobile">
+                        <li class="menu-item"><a href="shop.html">Shop</a></li>
+                        <li class="menu-item">
+                          <a href="shop-detail.html">Shop Details</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="menu-item menu-item-has-children-mobile">
+                      <a class="item-menu-mobile" href="javascript:void(0);"
+                        >Blog</a
+                      >
+                      <ul class="sub-menu-mobile">
+                        <li class="menu-item">
+                          <a href="blog.html">Blog Grid</a>
+                        </li>
+                        <li class="menu-item">
+                          <a href="blog-single.html">Blog Single</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="menu-item">
+                      <a href="contact-us.html">Contact</a>
+                    </li>
+                  </ul>
+                </nav> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!-- /header -->
+
+      <!-- page-title -->
+      <div class="page-title-home">
+        <!-- <video class="bg-video" autoplay muted loop playsinline preload="metadata">
+          <source
+            src="./images/extras/butter2.mp4"
+            type="video/mp4"
+          />
+        </video> -->
+        <img class ="bg-video" src="./images/extras/HeroImage.jpg" alt="">
+        <div
+          class="swiper-container slide-effect-fade slider-page-title-home slide-effect-fade"
+        >
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="page-title home-page-title">
+                <div class="wrap-page-title">
+                  <div class="left">
+                    <div class="content">
+                      <h1 class="title fade-item fade-item1">
+                        So buttery...<br />
+                        So savory...<br />
+                        Heaven in a roll.
+                      </h1>
+                      <p class="fade-item fade-item2 text-white">
+                          Baked fresh daily, on premise... in small batches using premium Korean flour
+                          and Maldon salt.
+                          <!-- <br /> -->
+                          Come visit and try our soft in the inside, crisp on the outside salt bread!
+                      </p>
+                      <div class="item-arrow fade-item fade-item4">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          xmlns:xlink="http://www.w3.org/1999/xlink"
+                          width="111"
+                          height="65"
+                          viewBox="0 0 111 65"
+                        >
+                          <image
+                            id="Vector_Smart_Object"
+                            data-name="Vector Smart Object"
+                            width="111"
+                            height="65"
+                            xlink:href="data:img/png;base64,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"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+                    <a class="tf-btn fade-item fade-item3" target="_blank" href="https://www.makeitbutter.com/jun-s-macaron-gelato/fort-lee-nj">
+                      <span style="color: white; background-color: #f15c2b"
+                        >Order Now<i class="icon-arrow-right"></i></span>
+                    </a>
+                  </div>
+                  <div class="image-wrap">
+                    <!-- headerbefore -->
+                    <!-- <img
+                      class="lazyload"
+                      loading="lazy"
+                      data-src="images/page-title/main0.webp"
+                      src="images/page-title/main0.webp"
+                      alt="asa"
+                    /> -->
+                  </div>
+                  <!-- <div class="item-cream cream-1">
+                    <img src="images/item/pagetitle1.webp" alt="" />
+                  </div> -->
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="page-title home-page-title">
+                <div class="wrap-page-title">
+                  <div class="left">
+                    <div class="content">
+                      <h1 class="title fade-item fade-item1">
+                        So delicious,<br />
+                        You’ll scream <br />
+                        Wow! True love.
+                      </h1>
+                     <p class="fade-item fade-item2 text-white">
+                        Savory salt bread, cold gelato scoops and everything in between!
+                        <br />
+                        Get the best of our bakery & creamery delivered to your door in 40 minutes or less!
+                    </p>
+                      <div class="item-arrow fade-item fade-item4">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          xmlns:xlink="http://www.w3.org/1999/xlink"
+                          width="111"
+                          height="65"
+                          viewBox="0 0 111 65"
+                        >
+                          <image
+                            id="Vector_Smart_Object"
+                            data-name="Vector Smart Object"
+                            width="111"
+                            height="65"
+                            xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAG8AAABBCAYAAADfY/omAAAFu0lEQVR4nO2dC4gVVRjHf6urm+bablmo2AOy7U1ZqT0o6P2kTAJJetPDIMssehcVUUFRRGEl2DsqLbKHbZhlUEoZUpaFWRZR2JPC1NBddOOD/4XpMDP3zt15xvnBsHvv7p35z/3fc853vvPN3JaN88biqQytwBJgpv0c4H2rFBcCE4CnTLQ3rzoMA+6UWusuB3jzqoN1lSOl9kdgqzevGnQA1waULsB3m5VhBtAeENuNN68SdMi8GpuBd/HmVQIzbruA0MXARrx5pccizCsdkS/XfvHmlZsrgM6Awh7g1doDb155GeZEmMZrwJ+1B9688jId2MFR93jwgTevnFiEeb2jbCXwXvAJb145ucGJMI37gb7gE9688rErcJWjytJhL7hKvXnl4x5gG0fV3Yo0/4M3r1wcDZztKLJW90SYSm9eeWgDHg1Rc2tYq8ObVypuBPZ0BH0GPBsl0ptXDg4Ebg5RYmt4W6MUevOKp02tq9VR8pKS0JF484rnXmA/R8V6tbpYvHnFcpqzVlfDxr+19ZR584pjl1oVmMP7wKxGVHnzisEm4a+EJJ6tu7zITYNF4c0rhseAQ0KOfDnwfaOKvHn5Y0nn80OOahHn80nUePPyZYpyly4r1eoS4c3Lj2OAp0OOtg6YXCsqSoI3Lx8mqoShzTnaViWiv2lGhTcve/ZXhfOwkCPNqBXQNoM3L1sOVumCOyUwHgQe7s/R3XyaJz2sq1wIDA/Zo0WV1/T3SL7lZcNJSiqHGfdGkol4HN689LE53OvAkJA9m3FnRS2uJsWblx4tqjWxfOWgkL2mahx+zEuNdpk2OWKHVvl1QZrG4VteKuwLLIsx7hHg3LSNw5vXb2x8+xjYK2JH16lsfUsWB/fdZnN0qtJrSsSrLdV1DjA/SxHevOScCswGRke80pZ0Tga+zlqI7zYbZyfgOeDNGOOspe2dh3Gk2PI6dHOX8bpA4gHgl5T2XTQDgWnAXTrPMHoUsCzIU2sz5llmfJyMmqifXc7/TNPluGE1GlXiOF2dc0CMZkuBnQFsyvu8GjFvZ+Bw4AjgUBlX73XtERPVqjBOJXknxOjdog/v8qLOKcwEK7k+UWaZaWMS7nODLoyYk5LGPDkIuE0tKQ5bDb8lrpo5D4Lm2adsXkQytR6WZP1A3eTcZlaFC8TSWqcAVwPH1pHxJXBU8LrwImlV97Zci4ZJWQq8qDK2ukWiJWN74DzgsphJdo1eXX61pEyn0Krmn9S4t7Ue9VVGurJikHoYm0CfGVKW4NKn83yo6C4yjNYmIs7Vuux2dT4S+02bosZJ2kY0sMM+1VbOLCKKbBS70+1wVTAlZZXqL7o13pXpJG2ifLxMs6qtbRt8nZ3DM8pJNvOe5ErtNsV2s5b7+nFgGxM+BT4CPgFWyNzeHE5mpOZhFikepgg5rGYkjh+Uq5ylkvNKELzH9FKdfFr0Kk30LfAdsAb4Wdtvitj+rjOWDFFWo0NTllGad5rosZrW7Nik3s26FdSTwKIyjmn1CJo3WN3fhJw1bAgsmWwK3AlhaAYT/R5lROaqVKH0XWMcwWClR2PEohgD+1TKNr7J+WAYwXpG98YxaWBTmHdUhrCwSt1iPdxIc71C6e6ILvQn4HS1kC6NNfsAe6gL64ooLs2TNVog/VAVXKsK1pMZUd+rMFTdSljGYbGu6PwnQtQomdglQ83Y3YHdEkR9jfCHjLEx9QvgcwVKvxf2buZM3JdiDNbYEJbne0uT3KR1GSNk4hhlODoDW9DYPo1HFkT8pc0CnF/V+m2rUgouE+p9o8lATVYvDvnbfJWyZVKf4alPvZV0M+YS4PaQv03ShHagf5+LodEyiDvU+txWNlUT25b/w5tRNZLUsMxRoOKG2pcqcevJmaQFSLaacKQChiDTtfLsyZFmqsdWaPl/mfO83Vb3Jm9efjRbPbZWZRJTFbiMVhi/Th+IyuUJKwfwL89WCHrrVFNtAAAAAElFTkSuQmCC"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+                    <a class="tf-btn fade-item fade-item3" href="https://www.makeitbutter.com/jun-s-macaron-gelato/fort-lee-nj">
+                      <span>Order Now<i class="icon-arrow-right"></i></span>
+                    </a>
+                  </div>
+                  <!-- headerbefore -->
+                  <!-- <div class="image-wrap">
+                    <img
+                      class="lazyload"
+                      loading="lazy"
+                      data-src="images/page-title/main24.webp"
+                      src="images/page-title/main24.webp"
+                      alt=""
+                    />
+                  </div>
+                  <div class="item-cream cream-2">
+                    <img
+                      loading="lazy"
+                      src="images/item/pagetitle2.webp"
+                      alt=""
+                    />
+                  </div> -->
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-next button page-title-next">
+            <i class="icon-arrow-right2"></i>
+          </div>
+          <div class="swiper-button-prev button page-title-prev">
+            <i class="icon-arrow-left2"></i>
+          </div>
+        </div>
+      </div>
+
+      <!-- /page-title -->
+
+      <!-- main-content -->
+      <div class="main-content home-page">
+        <!-- section-category-product -->
+        <section id="menu" class="section-category-product tf-spacing-2">
+          <div class="tf-container">
+            <div class="row">
+              <div class="col-12">
+                <div class="heading-section">
+                  <div
+                    class="text-1 title"
+                    data-aos="fade-up"
+                    data-aos-duration="1000"
+                  >
+                  Butter & Scoop Specialties  
+                  </div>
+                  <p data-aos="fade-up" data-aos-duration="1000">
+                    Whether you’re after a family favourite or gourmet dessert
+                    experience, Butter & Scoop <br />has something for
+                    everyone!
+                  </p>
+                  <div
+                    class="item-top"
+                    data-aos="fade-down"
+                    data-aos-duration="1000"
+                    data-aos-delay="100"
+                  >
+                    <img loading="lazy" src="images/item/cream-up.webp" alt="" />
+                  </div>
+                  <div
+                    class="item-bot"
+                    data-aos="fade-up"
+                    data-aos-duration="500"
+                    data-aos-delay="100"
+                  >
+                    <img
+                      loading="lazy"
+                      src="images/item/cream-down.webp"
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <div class="grid-layout-4">
+                <div class="box-item bg-1" data-aos="fade-up" data-aos-delay="100">
+<div class="image-wrap">
+    <img loading="lazy" src="images/extras/Specialties/remove-bg/ArtisanB-7.png" alt="Mocha Cream Sea Salted Butter Bread" />
+  </div>
+  <div class="content">
+    <h4><a href="#">Mocha Cream</a></h4>
+    <p>Sea Salted Butter Bread</p>
+  </div>
+</div>
+
+<div class="box-item style-2 bg-2 spacing-6" data-aos="fade-up" data-aos-delay="200">
+  <div class="image-wrap">
+    <img loading="lazy" src="images/extras/Specialties/remove-bg/ArtisanB-8.png" alt="Maple Almonds Sea Salted Butter Bread" />
+  </div>
+  <div class="content">
+    <h4><a href="#">Maple Almonds</a></h4>
+    <p>Sea Salted Butter Bread</p>
+  </div>
+</div>
+
+<div class="box-item bg-3 spacing-1" data-aos="fade-up" data-aos-delay="300">
+  <div class="image-wrap">
+    <img loading="lazy" src="images/extras/Specialties/remove-bg/ArtisanB-9.png" alt="Garlic Cream Cheese Sea Salted Butter Bread" />
+  </div>
+  <div class="content">
+    <h4 class="title"><a href="#">Garlic Cream Cheese</a></h4>
+    <p>Sea Salted Butter Bread</p>
+  </div>
+</div>
+
+<div class="box-item style-2 bg-4 spacing-7" data-aos="fade-up" data-aos-delay="400">
+  <div class="image-wrap">
+    <img loading="lazy" src="images/extras/Specialties/remove-bg/ArtisanB-10.png" alt="Omelette & Cheese Sea Salted Butter Bread" />
+  </div>
+  <div class="content">
+    <h4><a href="#">Omelette & Cheese</a></h4>
+    <p>Sea Salted Butter Bread</p>
+  </div>
+</div>
+
+<div class="box-item bg-5 spacing-2" data-aos="fade-up" data-aos-delay="100">
+  <div class="image-wrap">
+    <img loading="lazy" src="images/extras/Specialties/remove-bg/ArtisanB-13.png" alt="Scallion Cream Cheese Sea Salted Butter Bread" />
+  </div>
+  <div class="content">
+    <h4><a href="#">Scallion Cream Cheese</a></h4>
+    <p>Sea Salted Butter Bread</p>
+  </div>
+</div>
+
+<div class="box-item style-2 bg-4 spacing-3" data-aos="fade-up" data-aos-delay="200">
+  <div class="image-wrap">
+    <img loading="lazy" src="images/extras/Specialties/remove-bg/ArtisanB-14.png" alt="Chestnut Sea Salted Butter Bread" />
+  </div>
+  <div class="content">
+    <h4><a href="#">Chestnut</a></h4>
+    <p>Sea Salted Butter Bread</p>
+  </div>
+</div>
+
+<div class="box-item bg-2 spacing-4" data-aos="fade-up" data-aos-delay="300">
+  <div class="image-wrap">
+    <img loading="lazy" src="images/extras/Specialties/remove-bg/ArtisanB-15.png" alt="Everything Sea Salted Butter Bread" />
+  </div>
+  <div class="content">
+    <h4><a href="#">Everything</a></h4>
+    <p>Sea Salted Butter Bread</p>
+  </div>
+</div>
+
+<div class="box-item style-2 bg-6 spacing-5" data-aos="fade-up" data-aos-delay="400">
+  <div class="image-wrap">
+    <img loading="lazy" src="images/extras/Specialties/remove-bg/ArtisanB-16.png" alt="Scorched Rice Sea Salted Butter Bread" />
+  </div>
+  <div class="content">
+    <h4><a href="#">Scorched Rice</a></h4>
+    <p>Sea Salted Butter Bread</p>
+  </div>
+</div>
+              </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- /section-category-product -->
+
+         <!-- section-portfolio -->
+        <section class="section-portfolio">
+          <div class="tf-container w-full">
+            <div class="row">
+              <div class="col-12">
+                <div class="grid-layout-4">
+                  
+                  <div
+                    class="portfolio-item hover-img"
+                    data-aos="fade-up"
+                    data-aos-duration="600"
+                    data-aos-delay="400"
+                  >
+                    <div class="image-wrap">
+                      <img
+                        loading="lazy"
+                        class="lazyload"
+                        data-src="images/section/portfolio-4.webp"
+                        src="images/section/portfolio-4.webp"
+                        alt=""
+                      />
+                    </div>
+                    <div class="content">
+                      <h4 class="title">
+                        <a href="portfolio.html">Original Salt Bread</a>
+                      </h4>
+                      <p>Soft and fluffy milk-bread interior, a hidden core of melted butter, and a crispy, butter-fried bottom finished with coarse flaky sea salt</p>
+                    </div>
+                  </div>
+                  <div
+                    class="portfolio-item hover-img"
+                    data-aos="fade-up"
+                    data-aos-duration="600"
+                    data-aos-delay="100"
+                  >
+                    <div class="image-wrap">
+                      <img
+                        loading="lazy"
+                        class="lazyload"
+                        data-src="images/section/portfolio-1.webp"
+                        src="images/section/portfolio-1.webp"
+                        alt=""
+                      />
+                    </div>
+                    <div class="content">
+                      <h4 class="title">
+                        <a href="portfolio.html">Salt Bread Varietal</a>
+                      </h4>
+                      <p>We offer over 12 varieties of Salt bread with seasonal specials!</p>
+                    </div>
+                  </div>
+                  <div
+                    class="portfolio-item hover-img"
+                    data-aos="fade-up"
+                    data-aos-duration="600"
+                    data-aos-delay="200"
+                  >
+                    <div class="image-wrap">
+                      <img
+                        loading="lazy"
+                        class="lazyload"
+                        data-src="images/section/portfolio-2.jpg"
+                        src="images/section/portfolio-2.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="content">
+                      <h4 class="title">
+                        <a href="portfolio.html">Dubai Chocolate</a>
+                      </h4>
+                      <p>Sticky, indulgent confectionary filled with pistachio cream, tahini and shreds of knafeh pastry</p>
+                    </div>
+                  </div>
+                  <div
+                    class="portfolio-item hover-img"
+                    data-aos="fade-up"
+                    data-aos-duration="600"
+                    data-aos-delay="300"
+                  >
+                    <div class="image-wrap">
+                      <img
+                        loading="lazy"
+                        class="lazyload"
+                        data-src="images/section/portfolio-3.webp"
+                        src="images/section/portfolio-3.webp"
+                        alt=""
+                      />
+                    </div>
+                    <div class="content">
+                      <h4 class="title">
+                        <a href="portfolio.html">Bingsu</a>
+                      </h4>
+                      <p>Milk-based Korean shaved ice dessert with variety of sweet & savory topping options</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- /section-portfolio -->
+
+        <!-- section-deliver -->
+        <section class="section-deliver">
+          <div class="image-wrap">
+            <img
+              loading="lazy"
+              class="lazyload"
+              data-src="images/section/delivery.webp"
+              src="images/section/delivery.webp"
+              alt=""
+            />
+          </div>
+          <div class="content">
+            <div class="title text-1" data-aos="fade-up">
+                Freshly Delivered to your Door
+            </div>
+            <p class="" data-aos="fade-up" data-aos-duration="600">
+              Our desserts are packed carefully to ensure your ice cream stays perfectly fresh and your pastries stay flawlessly delicious into the evening of your delivery. We treat every order with local care. Guaranteed.
+
+
+
+Guaranteed Fresh
+Free Local Delivery 
+3 mile radius
+            </p>
+            <div class="wrap-service">
+              <div
+                class="wg-service-item"
+                data-aos="fade-up"
+                data-aos-duration="600"
+              >
+                <div class="icon">
+                  <i class="icon-snowflake"></i>
+                </div>
+                <div class="content">
+                  <h4 class="title">Guaranteed Fresh</h4>
+                  <p>
+                    No melted disappointment here. We pack our ice cream-stuffed
+                    pastries and loaded sundae boxes with specialized cooling
+                    packs so they arrive at your doorstep icy, solid, and ready
+                    to enjoy.
+                  </p>
+                </div>
+              </div>
+              <div
+                class="wg-service-item"
+                data-aos="fade-up"
+                data-aos-duration="600"
+                data-aos-delay="200"
+              >
+                <div class="icon">
+                  <i class="icon-package-box"></i>
+                </div>
+                <div class="content">
+                  <h4 class="title">Free Local Delivery</h4>
+                  <p>
+                    Living nearby? Enjoy free delivery on orders within a 2-mile
+                    radius of our Fort Lee shop. Get your favorite Butter &
+                    Scoop cravings brought straight to you, free of charge.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="wrap-button" data-aos="fade-up" data-aos-duration="600">
+              <a href="shop.html" class="tf-btn btn-left">
+                <span> Order Now<i class="icon-arrow-right"></i> </span>
+              </a>
+            </div>
+          </div>
+        </section>
+      <!-- Video Section -->
+      <!-- <section class="butter-video-section">
+          <video
+              class="butter-video"
+              autoplay
+              muted
+              loop
+              playsinline
+              preload="metadata"
+          >
+              <source
+                  src="https://res.cloudinary.com/x0tlsf89/video/upload/v1786383960/butter1-cropped_-_CROP_-_Videobolt.net.mp4"
+                  type="video/mp4"
+              />
+          </video>
+      </section> -->
+
+       <!-- section-video videochange-->
+      <section class="media-video-section">
+        <div class="media-video">
+          <video
+            src="./images/extras/butter1.mp4"
+            autoplay
+            muted
+            loop
+            playsinline
+          ></video>
+        </div>
+      </section>
+        <!-- section-video -->
+      
+        <!-- section-post -->
+        <section id="about" class="section-post">
+          <div class="left">
+            <img
+              class="lazyload"
+              loading="lazy"
+              data-src="images/section/about-us-1.jpg"
+              src="images/section/about-us-1.jpg"
+              alt=""
+            />
+          </div>
+          <div class="center">
+            <div class="content">
+              <div
+                class="text-1 title font-caprasimo"
+                data-aos="fade-up"
+                data-aos-duration="600"
+              >
+                Welcome! <br />
+                There’s Lots Of <br />
+                Fun In Our <br />
+                Ice Cream Shop.
+              </div>
+              <p class="" data-aos="fade-up" data-aos-duration="600">
+                Old History. Brand New Scoops. <br />
+                For centuries, ice cream has been a global obsession. Today,
+                <b>Butter & Scoop</b> is reinventing <br />
+                that classic love affair right in the heart of Fort Lee, NJ.
+                Nestled at 250 Main St, we bridge the gap <br />
+                between the bakery and the creamery. By stuffing flaky, buttery
+                pastries with gourmet ice cream <br />
+                and loading them with spectacular toppings, we’ve created a
+                mouth-watering destination that is destined <br />
+                to become a local legend.
+              </p>
+              <!-- <a href="about-us.html" class="tf-btn " data-aos="fade-up" data-aos-duration="600">
+                            <span>
+                                learn more about us<i class="icon-arrow-right"></i>
+                            </span>
+                        </a> -->
+            </div>
+          </div>
+          <div class="right">
+            <div class="image-wrap">
+              <img
+                class="lazyload"
+                loading="lazy"
+                data-src="images/section/about-us-2.webp"
+                src="images/section/about-us-2.webp"
+                alt=""
+              />
+            </div>
+            <div class="content">
+              <h4 class="" data-aos="fade-up" data-aos-duration="600">
+                A brand-new legend in New Jersey, crafted for pure indulgence
+                and just as delicious and mouth-watering today.
+              </h4>
+              <!-- <a href="history.html" class="tf-btn-default " data-aos="fade-up" data-aos-duration="600">
+                            <span>
+                                learn more history
+                            </span>
+                            <i class="icon-arrow-right"></i>
+                        </a> -->
+            </div>
+            <!-- <div class="cycle-item" data-aos="fade-up" data-aos-delay="100">
+                        <span class="h2 ">
+                            Since
+                            1960
+                        </span>
+                    </div> -->
+          </div>
+        </section>
+        <!-- /section-post -->
+
+        <!-- section-box-icon -->
+        <section class="section-box-icon tf-spacing-3">
+          <div class="tf-container w-1386">
+            <div class="row">
+              <div class="col-12">
+                <div class="wrap-icon-box">
+                  <div class="icons-box" data-aos="fade-up">
+                    <div class="icon">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        width="35"
+                        height="61"
+                        viewBox="0 0 35 61"
+                      >
+                        <image
+                          id="milk"
+                          width="35"
+                          height="61"
+                          xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACMAAAA9CAYAAAAnBdCyAAADgklEQVRoge2ZS2jUQBjHf41VkQZ8YFVUrHoQgqAoWgmoBw9lxYOgGKUVXfHkRSjixbuoeFDxIF4kB1EI9VEEDYg3IfhAQZTYi/gGEdTSFR+1Kl+dLDFu0jRrkz30D0s308n8fzuZme+bSRMhVUrlqcABYAswn7HTG+AKcFx37f7ApQpTKZUXAbcA+ZuXXgAbdNd+VoWplMoacB9YkR9HVY+AlbprD2mqZGNBIKJlwCb5EsCsLQgk0LowzJyCYVoJwTQl181HWiNABGpImG8FcwwSgnlZLAvPCcH0AL8KAhHfq1UY3bX7JE4UBHNSd+0nRAbwIeAwMJQThPgcBQ4GBf+sL5VSeYMKmGOtDt21b4Y9ak3t4aU5B62PWtSC6cyH5V+fWslVd04wolO6a3/M0W9c9as6ZgzTkUxvagF92u971kMCGMN0pgDvgZYCYD5LcuV71pdgam8uCATlK/7VdaarIJBAw/5NhulMU4+ouUCYH/KoNLVNKBIE5b9JyzEWjaS1zWoTFSfJMy4AC4C9GXtQHsE5lc3tSPBbLo23xfzzHWD6njXAn+n/ADibAWa/71lnVBungafAvBr12rSEKX03AFHKmpr2BF98z6oAd2LqtSR1+8zwhe9ZHwzT2aYGfJotzk/ghu9Z7yPlrXE3yNT+FBMG5Fm3+Z71NoVxKhmmMwt4BUyqUb8/6Rc2j0GSfjwGpGqYpE7DdORkqdv3rMwbPcN0JiuQXUn10kzVfUA7sCpcWCmV58b8yh+6a7+OlN2O3p8VhuhgVroua0ONcjkaWxgpix20YTXUxr+emNQXU5559mWG0V17e9Z74zR+WBSntDAT6/SZkKZS6qltmE6T71nVQFkplU8Ae2rUvai79r7gQu4DZqcxSdszsritjpQJzFcV14LPYI0Q0p62Z0czZnaHL3TXlqO3lcAR4DJwTBbB4D1ASIkhIKykqB2VRPEVvmc9Ttu4YTpLgYcpeyYxakcl46tXpQFpQFpVj6Ue/KOd2oslAzRMZ80IIBIU7wJLRtP4aB5TVJdUsn5PuhiYoSKzJN1bM7TXX09s2prRNFbj4SBODQdT1DF9VL+0epKh/6y3msplG0HXNRXwBgqGEf8TmtoxdqnYU4TEt0s4hmeT71nX5MWC2nrmKfHrUP5/H9cbpiN5y0514CfnKNPHAECO5+Utfy9w3ves78OlwG+siNKRWQI97gAAAABJRU5ErkJggg=="
+                        />
+                      </svg>
+                    </div>
+                    <h4 class="title">Pure Fresh Milk</a></h4>
+                    <p>
+                      We use only natural, fresh and local (when possible)
+                      ingredients in our gelato.
+                    </p>
+                  </div>
+                  <div
+                    class="icons-box effec-icon"
+                    data-aos="fade-up"
+                    data-aos-duration="600"
+                    data-aos-delay="200"
+                  >
+                    <div class="icon">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        width="53"
+                        height="62"
+                        viewBox="0 0 53 62"
+                      >
+                        <image
+                          id="shield"
+                          width="53"
+                          height="62"
+                          xlink:href="data:img/png;base64,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"
+                        />
+                      </svg>
+                    </div>
+                    <h4 class="title">No Preservatives </a></h4>
+                    <p>
+                      Our ice cream is made with 50% double cream, which is one
+                      of the first things people notice when they taste the rich, velvety difference.
+                    </p>
+                  </div>
+                  <div
+                    class="icons-box effec-icon"
+                    data-aos="fade-up"
+                    data-aos-duration="600"
+                    data-aos-delay="300"
+                  >
+                    <div class="icon">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        width="62"
+                        height="62"
+                        viewBox="0 0 62 62"
+                      >
+                        <image
+                          id="ice-cream-cup"
+                          width="62"
+                          height="62"
+                          xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD4AAAA+CAYAAABzwahEAAAE4klEQVRoge2aWYgcRRjHf9nEY02hSdB4PigaYogHGsRsREFXtIhrcBNdUUQK8UEfPCEaxZBoRBAPUNA8BGJJhJjFhzUvqVWEiFn2weCBQh4k4gWKBlGpGCOJSsXqpXemuqd7pnt3enb+MDB19vfvqn/VV1/1LKYAVqq5wH3AILAIOCHlqQ8Io7eVbdWcsh9gpVoGjADnZKh+ANhetk2UTdxKtRj4ADglY5P9wugjZdoUoafk/jfnIO2wyEp1XIn2TKA04laqi4BrczZbADxYkkmTUOaIX91kuxetVC9bqc4v2J5JKFPjp7fQ9hH3s1J9AuwAtgmjfyzQttZH3Eq1wEq13kr1ZU3R4Vb7Bi4Hnge+tVJpK9WFBfR5DE3v41Yq1/Z+4Flgvs9eKIz+xZevAd4pylCPo8DrwEZh9K+tdNTUiFupjvdT8LUYaYdLYv8/Av5pxbgAZjsHB/jCSiVb6Sg3cSvVbE/6tkDx9dEfYfTPgGnFuBScBeyyUm3yMy83mhnxtcAtCWW3W6nifT5XFNMEPAUM+xmYC7mIW6mcn70xpcp5wKooIYwe83IoE7e6tSQv+bwjvrbBAcNhU4339SjwfsnkbwbeyDPtMxO3UgngrgxVncf2ZJQQRv8NDABvZn1Wk7gTeCJr08xvyK+iuzJWd6v5oDB6Z00fK92M8PtzGXDPvcZLrDDiGxrouxaHgNXC6LqV3Up1KdAPOIdkIbACOK2gF/E1cLEw+s+0SnmIb/bBhDxwDsc64CVh9L8pfbvDyecZz+xZ8LQwOnWQ8ixuzfj1bs9/ARizUi1PquS9sD1N9J+Ex6xUZ6ZVyEPmuxYM6QPGrVROey6sNCqM/iYqtFKdDVzXQv+16AUeBh5PqpBnqrstY2eGqlnxG/A98AfgNC8K7NvhdycdYbQNFSZOdStVr5Uq7nuPFex7z3OLEHBVCaTxkZ9VSYVpGl8PqCjhdbi7cPPKxR1JvQeJW6lO9cGAgZqirdXhfAz9Sa5s0oi7betEH/xbEcvf4XVZFbhF7oo8xFfH/k8E/3zod12FiDssC2XWEbdSuUXhsljWkJXqglh6+xQcOopEMFwVGvGlNWm35b0SJbwHdjdQaPCvRJyblfgZgbyVVqqhKCGM/gm4ye/B7Y75IftCxJMO9FvisW5h9Kc+1HSgzYn3hjJDxIOeDnAy8K6Val6UIYz+GFjuDxiVQoj4/hQCS32Qb+I+TBjt6l8JPAP81YbkgzaFiH+VMur4Ef7QSjWxFgijDwujN/i771fbTPvBRbiOuN+rRxt05g4Vn1mp+mva/iCMfsgvkIP+tnTvNL+I4Kky6VjqYmv3Zuj0aChTGH3IfwwwEuX5AOTcrNYWiHaUXxdTjllL+oadzm9IcFw6Ec75es9pfAtwzwybc1t7AmfumYCBnvjKO4MwMscHHd6OfZ301jRtO2XiYOz6ywUhd9dFWZf0Dbubjxs7hvL/GN03PjTpQ4KQy1q1gGIW1HHqEo9hr9dEp+Cg55ROfN/40JGC77GmG3s8p3TiHp003YNcusRr0Ck6D+qbJOIdpPOgvmlwadgJ0z2RQ5d4AFXXeaK+SSPeATpP1DcZPv6p8nRPtb1LPAFV1XmqvmlEvMI6T9U3GT/wq+J0b2jzjCWe5ctGpxV38XZSMTaVDvfxbqq+Af4D5f9Sg2C2aXcAAAAASUVORK5CYII="
+                        />
+                      </svg>
+                    </div>
+                    <h4 class="title">Gelato Varietals</a></h4>
+                    <p>
+                      With 32 flavours and counting, we’re confident we have
+                      something for everyone!
+                    </p>
+                  </div>
+                  <div
+                    class="icons-box effec-icon"
+                    data-aos="fade-up"
+                    data-aos-duration="600"
+                    data-aos-delay="400"
+                  >
+                    <div class="icon">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        width="62"
+                        height="62"
+                        viewBox="0 0 62 62"
+                      >
+                        <image
+                          id="ice-cream-cart"
+                          width="62"
+                          height="62"
+                          xlink:href="data:img/png;base64,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"
+                        />
+                      </svg>
+                    </div>
+                    <h4 class="title">New Local Favorite </a></h4>
+                    <p>
+                      Serving the Fort Lee community with fast delivery straight
+                      to your door and fresh treats daily at our Main Street
+                      shop.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- /section-box-icon -->
+        
+        <!-- section-video videochange-->
+       <section class="section-video">
+        <div class="widget-video">
+          
+        </div>
+      </section>
+        <!-- section-video -->
+
+        <!-- section-top-seller -->
+        <!-- <section class="section-top-seller style-btn-slide tf-spacing-4  ">
+                <div class="tf-container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="heading-section">
+                                <div class="text-1 title " data-aos="fade-up" data-aos-offset="0"
+                                    data-aos-duration="1000">
+                                    Top Seller Product
+                                </div>
+                                <p data-aos="fade-up" data-aos-offset="0" data-aos-duration="1000">
+                                    Over the years, we have thrived on our reputation for quality ice cream and quality
+                                    service. <br> See for yourself why Hall’s Ice Cream.
+                                </p>
+                                <div class="item-top" data-aos="fade-down" data-aos-offset="0" data-aos-duration="1000"
+                                    data-aos-delay="300">
+                                    <img src="images/item/cream-up.webp" alt="">
+                                </div>
+                                <div class="item-bot" data-aos="fade-up" data-aos-offset="0" data-aos-duration="1000"
+                                    data-aos-delay="300">
+                                    <img src="images/item/cream-down.webp" alt="">
+                                </div>
+                            </div>
+                            <div class="swiper-container slide-layout-4 ">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="product-item style-2 " data-aos="fade-up" data-aos-delay="200">
+                                            <div class="image-wrap">
+                                                <img class="lazyload" data-src="images/shop/cream-1.webp"
+                                                    src="images/shop/cream-1.webp" alt="">
+                                                <div class="wrap-icons">
+                                                    <div class="icon add">
+                                                        <a href="#">
+                                                            <i class="icon-shoppingcart"></i>
+                                                        </a>
+                                                    </div>
+                                                    <div class="icon like">
+                                                        <a href="#"><i class="icon-heart
+                                                            "></i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="content">
+                                                <h5 class="title">
+                                                    <a href="shop-detail.html">Cherry Cream Cone</a>
+                                                </h5>
+                                                <p>A large scoop of vanilla ice cream, sandwiched between two
+                                                    old-fashioned.
+                                                </p>
+                                                <span class="price">$5.20</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="product-item style-2 " data-aos="fade-up" data-aos-delay="400">
+                                            <div class="image-wrap">
+                                                <img class="lazyload" data-src="images/shop/cream-2.webp"
+                                                    src="images/shop/cream-2.webp" alt="">
+                                                <div class="wrap-icons">
+                                                    <div class="icon add">
+                                                        <a href="#">
+                                                            <i class="icon-shoppingcart"></i>
+                                                        </a>
+                                                    </div>
+                                                    <div class="icon like">
+                                                        <a href="#"><i class="icon-heart
+                                                            "></i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="content">
+
+                                                <h5 class="title">
+                                                    <a href="shop-detail.html">Vani Cream Box</a>
+                                                </h5>
+                                                <p>A large scoop of vanilla ice cream, sandwiched between two
+                                                    old-fashioned.
+                                                </p>
+                                                <span class="price">$7.00</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="product-item style-2 " data-aos="fade-up" data-aos-delay="600">
+                                            <div class="image-wrap">
+                                                <img class="lazyload" data-src="images/shop/cream-3.webp"
+                                                    src="images/shop/cream-3.webp" alt="">
+                                                <div class="wrap-icons">
+                                                    <div class="icon add">
+                                                        <a href="#">
+                                                            <i class="icon-shoppingcart"></i>
+                                                        </a>
+                                                    </div>
+                                                    <div class="icon like">
+                                                        <a href="#"><i class="icon-heart
+                                                            "></i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="content">
+
+                                                <h5 class="title">
+                                                    <a href="shop-detail.html">Love Cream Cone</a>
+                                                </h5>
+                                                <p>A large scoop of vanilla ice cream, sandwiched between two
+                                                    old-fashioned.
+                                                </p>
+                                                <span class="price">$6.12</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="product-item style-2 " data-aos="fade-up" data-aos-delay="800">
+                                            <div class="image-wrap">
+                                                <img class="lazyload" data-src="images/shop/cream-4.webp"
+                                                    src="images/shop/cream-4.webp" alt="">
+                                                <div class="wrap-icons">
+                                                    <div class="icon add">
+                                                        <a href="#">
+                                                            <i class="icon-shoppingcart"></i>
+                                                        </a>
+                                                    </div>
+                                                    <div class="icon like">
+                                                        <a href="#"><i class="icon-heart
+                                                            "></i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="content">
+                                                <h5 class="title">
+                                                    <a href="shop-detail.html">Chocolate Ice Cream</a>
+                                                </h5>
+                                                <p>A large scoop of vanilla ice cream, sandwiched between two
+                                                    old-fashioned.
+                                                </p>
+                                                <span class="price">$4.60</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="product-item style-2">
+                                            <div class="image-wrap">
+                                                <img class="lazyload" data-src="images/shop/cream-1.webp"
+                                                    src="images/shop/cream-1.webp" alt="">
+                                                <div class="wrap-icons">
+                                                    <div class="icon add">
+                                                        <a href="#">
+                                                            <i class="icon-shoppingcart"></i>
+                                                        </a>
+                                                    </div>
+                                                    <div class="icon like">
+                                                        <a href="#"><i class="icon-heart
+                                                            "></i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="content">
+                                                <h5 class="title">
+                                                    <a href="shop-detail.html">Cherry Cream Cone</a>
+                                                </h5>
+                                                <p>A large scoop of vanilla ice cream, sandwiched between two
+                                                    old-fashioned.
+                                                </p>
+                                                <span class="price">$5.20</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-button-next button layout-4-next">
+                                <i class="icon-arrow-right2"></i>
+                            </div>
+                            <div class="swiper-button-prev button layout-4-prev">
+                                <i class="icon-arrow-left2"></i>
+                            </div>
+                            <a href="shop-detail.html" class="tf-btn " data-aos="fade-up" data-aos-delay="200">
+                                <span>
+                                    view all products<i class="icon-arrow-right"></i>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section> -->
+        <!-- /section-top-seller -->
+
+        <!-- section-news -->
+        <section class="section-news tf-spacing-18">
+          <div class="left">
+            <div class="image-wrap">
+              <img
+                loading="lazy"
+                class="lazyload"
+                data-src="images/section/seller-1.jpg"
+                src="images/section/seller-1.jpg"
+                alt=""
+              />
+            </div>
+            <div class="content">
+              <div class="wrap-content">
+                <div
+                  class="text-1 title fw-6 font-caprasimo text-white title"
+                  data-aos="fade-up"
+                  data-aos-duration="600"
+                >
+                  <a href="#"> Fresh From the Oven </a>
+                </div>
+                <p
+                  class="text-white fw-5"
+                  data-aos="fade-up"
+                  data-aos-duration="600"
+                >
+                  Discover our signature range of artisanal pastries, baked
+                  fresh daily. <br />
+                  From perfectly golden, flaky croissants to uniquely stuffed
+                  savory and sweet buns, <br />
+                  we combine traditional baking with a modern twist.
+                </p>
+              </div>
+              <a
+                href="#"
+                class="btn-redirect"
+                data-aos="fade-up"
+                data-aos-duration="600"
+                data-aos-delay="200"
+                ><i class="icon-arrow-right2"></i
+              ></a>
+            </div>
+          </div>
+          <div class="right">
+            <div class="wrap-content">
+              <div class="image-wrap">
+                <img
+                  loading="lazy"
+                  class="lazyload"
+                  data-src="images/section/seller-2.webp"
+                  src="images/section/seller-2.webp"
+                  alt=""
+                />
+              </div>
+              <div class="content bg-orange">
+                <span
+                  class="fs-20 font-caprasimo fw-5 text-white"
+                  data-aos="fade-up"
+                  data-aos-duration="600"
+                  >New</span
+                >
+                <h3
+                  class="fw-5 title"
+                  data-aos="fade-up"
+                  data-aos-duration="600"
+                >
+                  <a href="#">The Perfect Fill</a>
+                </h3>
+                <p
+                  class="text-white"
+                  data-aos="fade-up"
+                  data-aos-duration="600"
+                >
+                  Bite into pure bliss with our freshly baked cream-filled buns.
+                  Light, fluffy, and loaded with rich, velvety centers that melt
+                  in your mouth.
+                </p>
+              </div>
+            </div>
+            <div class="wrap-content style-2">
+              <div class="content">
+                <span
+                  class="fs-20 font-caprasimo text-white fw-5"
+                  data-aos="fade-up"
+                  data-aos-duration="600"
+                  >New</span
+                >
+                <h3
+                  class="fw-5 title"
+                  data-aos="fade-up"
+                  data-aos-duration="600"
+                >
+                  <a href="#">Artisanal Scoops</a>
+                </h3>
+                <p
+                  class="text-white"
+                  data-aos="fade-up"
+                  data-aos-duration="600"
+                >
+                  Experience ice cream the way it was meant to be. Made with
+                  premium ingredients for an incredibly smooth, rich, and
+                  decadent texture in every single scoop.
+                </p>
+              </div>
+              <div class="image-wrap">
+                <img
+                  loading="lazy"
+                  class="lazyload"
+                  data-src="images/extras/ArtisanB-35.webp"
+                  src="images/extras/ArtisanB-35.webp"
+                  
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- /section-news -->
+
+        <!-- section-testimonials -->
+        <section class="section-testimonial style-btn-slide">
+          <div class="tf-container">
+            <div class="row">
+              <div class="col-12">
+                <div class="heading-section">
+                  <div
+                    class="text-1 title"
+                    data-aos="fade-up"
+                    data-aos-offset="30"
+                    data-aos-duration="1000"
+                  >
+                    Testimonials
+                  </div>
+                  <p
+                    data-aos="fade-up"
+                    data-aos-offset="30"
+                    data-aos-duration="1000"
+                    data-aos-delay="400"
+                  >
+                    more than <a href="#">1000+ satisfied customers</a> with our
+                    products, Ut enim ad minim veniam, quis <br />
+                    nostrud exercitation ullamco laboris nisi.
+                  </p>
+                  <div
+                    class="item-top"
+                    data-aos="fade-down"
+                    data-aos-offset="30"
+                    data-aos-duration="500"
+                    data-aos-delay="100"
+                  >
+                    <img loading="lazy" src="images/item/cream-up.webp" alt="" />
+                  </div>
+                  <div
+                    class="item-bot"
+                    data-aos="fade-up"
+                    data-aos-offset="30"
+                    data-aos-duration="1000"
+                    data-aos-delay="100"
+                  >
+                    <img
+                      loading="lazy"
+                      src="images/item/cream-down.webp"
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <div
+                  class="swiper-container has-boxshadow testimonials-layout-3"
+                >
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div class="testimonial-item">
+                        <div class="description">
+                          <p>
+                            We came here with our family for ice cream, and it was absolutely delicious! Every flavor was rich, creamy, and full of flavor. We also tried some of their fresh bread and macarons, and they were just as amazing. Everything tasted fresh, and you can tell they take pride in what they make. If you’re looking for a sweet treat or delicious baked goods, we highly recommend stopping by. We can’t wait to come back!
+                          </p>
+                          <span></span>
+                        </div>
+                        <div class="author">
+
+                          <div class="content">
+                            <h5><!--<a href="#">-->Sandra R.</a></h5>
+                            <p>Fort Lee, NJ</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="testimonial-item">
+                        <div class="description">
+                          <p>
+                            I come here 10 times out of 10 every time I need a dessert while I’m around � lemon gelato has always been my fav and they make the best one! 
+                            🤩 If you’re a fruity person like me lemon, peach, and another berry-flavor of your choice make the divine combination 
+                            😋 Coffee here is also great if you feel like having a cozy warm drink during the winter
+                          </p>
+                          <span></span>
+                        </div>
+                        <div class="author">
+                          <div class="content">
+                            <h5><!--<a href="#">-->Louie K.</a></h5>
+                            <p>Fort Lee, NJ</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="testimonial-item">
+                        <div class="description">
+                          <p>
+                            The sea salt butter bread here is excellent. It’s soft, fluffy, and full of rich buttery flavor, with just the right touch of sea salt to balance it perfectly.
+                            Light, not too greasy, and very satisfying—definitely one of the best I’ve had. Highly recommend giving it a try!.
+                          </p>
+                          <span></span>
+                        </div>
+                        <div class="author">
+
+                          <div class="content">
+                            <h5><!--<a href="#">-->Manohar P.</a></h5>
+                            <p>Fort Lee, NJ</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="testimonial-item">
+                        <div class="description">
+                          <p>
+                            Such a great spot! Everything at Butter & scoop tastes so fresh, but their salt bread is seriously on another level. 
+                            They have a ton of different flavors, but the garlic and the scallion ones are definitely my favorites. 
+                            Also, the prices are honestly unbelievable for how good the quality is. Can't wait to go back!
+                          </p>
+                          <span></span>
+                        </div>
+                        <div class="author">
+
+                          <div class="content">
+                            <h5><!--<a href="#">-->Shaun Lee</a></h5>
+                            <p>Fort Lee, NJ</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-button-next button testimonials-3-next">
+                  <i class="icon-arrow-right2"></i>
+                </div>
+                <div class="swiper-button-prev button testimonials-3-prev">
+                  <i class="icon-arrow-left2"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- section-testimonials -->
+
+       
+        <!-- /section-deliver -->
+
+        <!-- section-info -->
+       <section id="contact" class="section-info tf-spacing-19 box-info bg-artisan">
+  <div class="tf-container w-1649">
+    <div class="row">
+      <div class="col-12">
+        <div class="grid-layout-3">
+          <div
+            class="box-info bg-artisan"
+            data-aos="fade-up"
+            data-aos-duration="600"
+            data-aos-delay="100"
+          >
+            <div class="wrap-content">
+              <div class="content">
+                <h3 class="title">
+                  Contact <br />
+                  & Support
+                </h3>
+                <p>Phone number: + 973 630 0363</p>
+                <p>Email: info@butterandscoop.com</p>
+                <a href="#" class="tf-btn-default"
+                  ><span>contact us</span><i class="icon-arrow-right"></i
+                ></a>
+              </div>
+              <div class="icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  width="150"
+                  height="141"
+                  viewBox="0 0 50 47"
+                >
+                  <image
+                    id="phonedfdf"
+                    width="50"
+                    height="47"
+                    xlink:href="data:img/png;base64,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"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div
+            class="box-info bg-2"
+            data-aos="fade-up"
+            data-aos-duration="600"
+            data-aos-delay="300"
+          >
+            <div class="wrap-content">
+              <div class="content">
+                <h3 class="title">
+                  Hours of Operations<br />
+                  Butter & Scoop
+                </h3>
+                <p>Monday - Sunday: 7:00 am - 10:00pm</p>
+                <!--<p>Sunday: 7.00 am - 22.00pm <span>Big Holiday: Closes</span> </p>-->
+                <a
+                  href="https://www.makeitbutter.com/jun-s-macaron-gelato/fort-lee-nj"
+                  class="tf-btn-default"
+                  ><span>order now</span><i class="icon-arrow-right"></i
+                ></a>
+              </div>
+              <div class="icon">
+                <!-- Generator: Adobe Illustrator 24.2.0, SVG Export Plug-In . SVG Version: 6.00 Build 0) -->
+                <svg
+                  version="1.1"
+                  id="Capa_1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  x="0px"
+                  y="0px"
+                  viewBox="0 0 477.8 477.8"
+                  style="enable-background: new 0 0 477.8 477.8"
+                  xml:space="preserve"
+                >
+                  <style type="text/css">
+                    .st0 {
+                      fill: #2939aa;
+                    }
+                    .st1 {
+                      fill: #f44860;
+                    }
+                  </style>
+                  <g>
+                    <g>
+                      <path
+                        class="st0"
+                        d="M374.1,385.5c71.7-74.9,69.2-193.7-5.7-265.4S174.7,50.9,103,125.7c-69.6,72.6-69.6,187.2,0,259.8l-48.8,65 c-5.7,7.5-4.1,18.2,3.4,23.9s18.2,4.1,23.9-3.4l47.3-63c65.4,47.7,154.1,47.7,219.5,0l47.3,63c5.7,7.5,16.4,9.1,23.9,3.4 c7.5-5.7,9.1-16.4,3.4-23.9L374.1,385.5z M255.6,256c0,3.7-1.2,7.3-3.4,10.2L201,334.5c-5.7,7.5-16.4,9.1-23.9,3.4 s-9.1-16.4-3.4-23.9l47.8-63.7v-96.7c0-9.4,7.6-17.1,17.1-17.1s17.1,7.6,17.1,17.1L255.6,256L255.6,256z"
+                      />
+                    </g>
+                  </g>
+                  <g>
+                    <g>
+                      <path
+                        class="st1"
+                        d="M145.3,25C111.5-7.9,57.5-7.2,24.6,26.5c-32.3,33.1-32.3,86,0,119.1c6.7,6.7,17.5,6.7,24.1,0l96.5-96.5 C151.9,42.5,151.9,31.6,145.3,25z"
+                      />
+                    </g>
+                  </g>
+                  <g>
+                    <g>
+                      <path
+                        class="st1"
+                        d="M452.5,25c-33.3-33.3-87.3-33.3-120.7,0c-6.7,6.7-6.7,17.5,0,24.1l96.5,96.5c6.7,6.7,17.5,6.7,24.1,0 C485.8,112.3,485.8,58.3,452.5,25z"
+                      />
+                    </g>
+                  </g>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div
+            class="box-info bg-3"
+            data-aos="fade-up"
+            data-aos-duration="600"
+            data-aos-delay="500"
+          >
+            <div class="wrap-content">
+              <div class="content">
+                <h3 class="title">
+                  How To <br />
+                  Find Our Location
+                </h3>
+                <p>250 Main St,</p>
+                <p>Fort Lee, New Jersey (NJ), 07024, United States</p>
+                <a
+                  href="https://www.google.com/maps/dir//250+Main+St,+Fort+Lee,+NJ+07024/@40.8517825,-73.9747141,17z/data=!4m18!1m8!3m7!1s0x89c2f6e7f178a59f:0xc1469f249e9ef890!2s250+Main+St,+Fort+Lee,+NJ+07024!3b1!8m2!3d40.8517785!4d-73.9721392!16s%2Fg%2F11bw43svq1!4m8!1m0!1m5!1m1!1s0x89c2f6e7f178a59f:0xc1469f249e9ef890!2m2!1d-73.9721392!2d40.8517785!3e4?hl=en&entry=ttu&g_ep=EgoyMDI2MDYyOS4wIKXMDSoASAFQAw%3D%3D"
+                  class="tf-btn-default"
+                  ><span>get directions</span><i class="icon-arrow-right"></i
+                ></a>
+              </div>
+              <div class="icon">
+                <!-- Generator: Adobe Illustrator 24.2.0, SVG Export Plug-In . SVG Version: 6.00 Build 0) -->
+                <svg
+                  version="1.1"
+                  id="Layer_1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  viewBox="0 0 512 512"
+                  style="enable-background: new 0 0 512 512"
+                  xml:space="preserve"
+                >
+                  <style type="text/css">
+                    .st0 {
+                      fill-rule: evenodd;
+                      clip-rule: evenodd;
+                      fill: #2939aa;
+                    }
+                    .st1 {
+                      fill-rule: evenodd;
+                      clip-rule: evenodd;
+                      fill: #f44860;
+                    }
+                  </style>
+                  <path
+                    class="st0"
+                    d="M398.5,58.8c-78.8-78.4-206.2-78.4-285,0c-37.9,37.9-55,85.1-55,133.8c0,51.9,19.6,105.3,54.3,150.4 l122.4,158.8c1.4,1.9,3.1,3.5,5,5c11.5,8.7,27.9,6.5,36.6-5L399.2,343c34.8-45.1,54.3-98.5,54.3-150.4 C453.5,143.9,436.4,96.7,398.5,58.8z M256,306.9c-51.5,0-93.2-41.7-93.2-93.2c0-51.5,41.7-93.2,93.2-93.2c24.7,0,48.4,9.8,65.9,27.3 c17.5,17.5,27.3,41.2,27.3,65.9C349.2,265.2,307.5,306.9,256,306.9z"
+                  />
+                  <circle class="st1" cx="256" cy="213.7" r="77" />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+        <!-- /section-info -->
+
+        <!-- section-brand -->
+        <!-- <section class="section-brand tf-spacing-7">
+                <div class="tf-container w-1300">
+                    <div class="row">
+                        <div class="col-12">
+
+                            <div class="wg-brand style-1">
+                                <div class="tf-container full">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <div class="swiper-container brand-slide">
+                                                <div class="swiper-wrapper">
+                                                    <div class="swiper-slide">
+                                                        <a href="#">
+                                                            <img src="images/brand/brand-1.webp" alt="">
+                                                        </a>
+                                                    </div>
+                                                    <div class="swiper-slide">
+                                                        <a href="#">
+                                                            <img src="images/brand/brand-2.webp" alt="">
+                                                        </a>
+                                                    </div>
+                                                    <div class="swiper-slide">
+                                                        <a href="#">
+                                                            <img src="images/brand/brand-3.webp" alt="">
+                                                        </a>
+                                                    </div>
+                                                    <div class="swiper-slide">
+                                                        <a href="#">
+                                                            <img src="images/brand/brand-4.webp" alt="">
+                                                        </a>
+                                                    </div>
+                                                    <div class="swiper-slide">
+                                                        <a href="#">
+                                                            <img src="images/brand/brand-5.webp" alt="">
+                                                        </a>
+                                                    </div>
+                                                    <div class="swiper-slide">
+                                                        <a href="#">
+                                                            <img src="images/brand/brand-6.webp" alt="">
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </section> -->
+        <!-- /section-brand -->
+
+       
+      </div>
+      <!-- /main-content -->
+
+      <!-- Footer -->
+      <footer class="footer">
+        <div class="footer-container">
+          <!-- Contact -->
+          <div class="footer-col">
+            <h3>Contact Us</h3>
+
+            <div class="footer-content">
+              <p class="label">ADDRESS:</p>
+              <p>250 Main Street</p>
+              <p>Fort Lee, NJ 07024</p>
+
+              <br />
+
+              <p class="label">CONTACT US:</p>
+              <p>
+                <a href="mailto:info@butterandscoop.com">
+                  info@butterandscoop.com
+                </a>
+              </p>
+              <p>
+                <a href="tel:+19736300363"> +1 (973) 630-0363 </a>
+              </p>
+            </div>
+          </div>
+
+          <!-- Center -->
+          <div class="footer-col footer-center">
+            <img
+              src="images/logo-white.webp"
+              alt="Butter & Scoop Logo"
+              class="footer-logo"
+            />
+
+            <p>
+              At Butter & Scoop, quality comes first. We proudly serve authentic
+              Italian gelato and freshly baked Korean Sea Salt Butter Bread, made with
+              carefully selected ingredients and a passion for bringing people
+              together through delicious, handcrafted treats.
+            </p>
+
+            <div class="footer-social">
+              <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="https://www.instagram.com/butternscoop/"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+          </div>
+
+          <!-- Hours -->
+          <div class="footer-col">
+            <h3>Hours of Operations</h3>
+
+            <div class="footer-content hours">
+              <p><span>Monday – Thursday</span><span>7:00 AM - 9:00 PM</span></p>
+              <p><span>Friday - Saturday</span><span>7:00 AM - 10:00 PM</span></p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bottom -->
+        <div class="footer-bottom">
+          <p>© 2026 Butter & Scoop Inc. All Rights Reserved.</p>
+
+          <div class="footer-links">
+            <a href="#">Terms of Use</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Accessibility Statement</a>
+          </div>
+        </div>
+      </footer>
+
+      <!-- /Footer -->
+    </div>
+    <!-- /wrapper -->
+    <!-- prograss -->
+    <div class="progress-wrap">
+      <svg
+        class="progress-circle svg-content"
+        width="100%"
+        height="100%"
+        viewBox="-1 -1 102 102"
+      >
+        <path
+          d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"
+          style="
+            transition: stroke-dashoffset 10ms linear;
+            stroke-dasharray: 307.919, 307.919;
+            stroke-dashoffset: 307.919;
+          "
+        ></path>
+      </svg>
+    </div>
+    <!-- /prograss -->
+
+    <!-- Javascript -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/lazysize.min.js"></script>
+    <script type="text/javascript" src="js/wow.min.js"></script>
+    <script type="text/javascript" src="js/magnific-popup.min.js"></script>
+    <script type="text/javascript" src="js/swiper-bundle.min.js"></script>
+    <script type="text/javascript" src="js/swiper.js"></script>
+    <script type="text/javascript" src="js/aos.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/custom.js"></script>
+
+    <script>
+      AOS.init({
+        once: true,
+        duration: 600,
+        easing: "ease-out",
+        offset: 80,
+        debounceDelay: 50,
+        throttleDelay: 99,
+      });
+    </script>
+    <!-- /Javascript -->
+  </body>
+</html>
