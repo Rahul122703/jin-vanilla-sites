@@ -1,0 +1,327 @@
+/* ContactMap2 – "Visit us" section: contact card + map with overlay. */
+.cm2 {
+  --cm2-ink: #1b1b1b;
+  --cm2-muted: #5f584f;
+  --cm2-label: #6f6659;
+  --cm2-navy: #1e3c6b;
+  --cm2-navy-hover: #162e54;
+  --cm2-card: #f3eee5;
+  --cm2-chip: #e7dece;
+  --cm2-line: #dcd1bd;
+  --cm2-pin: #a83a37;
+
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  background-color: #e3dccb;
+  padding: 56px 0 64px;
+  margin-top: -4px;
+  color: var(--cm2-ink);
+  font-family: var(--builder-font-secondary, Poppins, sans-serif);
+}
+
+.cm2__inner {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 16px;
+  box-sizing: border-box;
+}
+
+/* Header */
+.cm2__header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 36px;
+}
+.cm2__eyebrow {
+  margin: 0 0 10px;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--cm2-navy);
+}
+.cm2__title {
+  margin: 0 0 14px;
+  font-family: var(--builder-font-primary, Montserrat, sans-serif);
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: -0.01em;
+  color: var(--cm2-ink);
+}
+.cm2__lead {
+  margin: 0;
+  max-width: 420px;
+  font-size: 14px;
+  line-height: 1.7;
+  color: var(--cm2-muted);
+}
+
+/* Layout */
+.cm2__grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 16px;
+  align-items: stretch;
+}
+
+/* Contact card */
+.cm2__card {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--cm2-card);
+  border-radius: 16px;
+  padding: 28px 24px;
+  box-sizing: border-box;
+}
+.cm2__card-title {
+  margin: 0 0 22px;
+  font-family: var(--builder-font-primary, Montserrat, sans-serif);
+  font-size: 19px;
+  font-weight: 600;
+  color: var(--cm2-ink);
+}
+.cm2__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+.cm2__item {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+}
+.cm2__chip {
+  flex-shrink: 0;
+  width: 32px;
+  height: 32px;
+  border-radius: 9999px;
+  background-color: var(--cm2-chip);
+  color: var(--cm2-ink);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cm2__chip svg {
+  width: 14px;
+  height: 14px;
+}
+.cm2__item-body {
+  min-width: 0;
+}
+.cm2__label {
+  display: block;
+  margin-bottom: 3px;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--cm2-label);
+}
+.cm2__value {
+  font-size: 14px;
+  line-height: 1.55;
+  color: var(--cm2-ink);
+  text-decoration: none;
+  overflow-wrap: anywhere;
+}
+.cm2__value:hover {
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.cm2__divider {
+  border: 0;
+  border-top: 1px solid var(--cm2-line);
+  margin: 24px 0 22px;
+}
+
+/* Hours */
+.cm2__hours-title {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  margin: 0 0 12px;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--cm2-label);
+}
+.cm2__hours-title svg {
+  width: 12px;
+  height: 12px;
+}
+.cm2__hours {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.cm2__hours-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  font-size: 13px;
+  line-height: 1.4;
+}
+.cm2__hours-row dt,
+.cm2__hours-row dd {
+  margin: 0;
+}
+.cm2__hours-row dd {
+  text-align: right;
+  white-space: nowrap;
+}
+
+/* Buttons */
+.cm2__actions {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 28px;
+}
+.cm2__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 36px;
+  padding: 8px 20px;
+  border-radius: 9999px;
+  border: 1px solid var(--cm2-ink);
+  font-size: 13px;
+  font-weight: 600;
+  text-decoration: none;
+  box-sizing: border-box;
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease,
+    border-color 0.2s ease;
+}
+.cm2__btn--primary {
+  background-color: var(--cm2-navy);
+  border-color: var(--cm2-navy);
+  color: #ffffff;
+}
+.cm2__btn--primary:hover {
+  background-color: var(--cm2-navy-hover);
+  border-color: var(--cm2-navy-hover);
+}
+.cm2__btn--outline {
+  background-color: transparent;
+  color: var(--cm2-ink);
+}
+.cm2__btn--outline:hover {
+  background-color: var(--cm2-ink);
+  color: #ffffff;
+}
+
+/* Map */
+.cm2__map {
+  position: relative;
+  min-height: 400px;
+  border-radius: 16px;
+  overflow: hidden;
+  background-color: #dbe0e3;
+  /* Safari: keep the rounded clip on the iframe */
+  -webkit-mask-image: -webkit-radial-gradient(white, black);
+  isolation: isolate;
+}
+/* Google's embed draws its own place card in the top-left corner and it
+   can't be styled cross-origin, so the iframe is pulled up past the clip
+   to hide it. The bottom edge stays put to keep Google's attribution. */
+.cm2__map iframe {
+  position: absolute;
+  top: -180px;
+  left: 0;
+  width: 100%;
+  height: calc(100% + 180px);
+  border: 0;
+  display: block;
+}
+.cm2__map-card {
+  position: absolute;
+  left: 12px;
+  right: 12px;
+  bottom: 12px;
+  z-index: 1;
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 14px 16px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+}
+.cm2__map-name {
+  margin: 0 0 4px;
+  font-family: var(--builder-font-primary, Montserrat, sans-serif);
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--cm2-ink);
+}
+.cm2__map-address {
+  margin: 0 0 8px;
+  font-size: 12px;
+  color: var(--cm2-muted);
+}
+.cm2__map-link {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--cm2-navy);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+.cm2__map-link:hover {
+  color: var(--cm2-navy-hover);
+}
+
+.cm2 a:focus-visible {
+  outline: 2px solid var(--cm2-navy);
+  outline-offset: 2px;
+}
+
+/* ≥640px */
+@media (min-width: 640px) {
+  .cm2 {
+    padding: 64px 0 72px;
+  }
+  .cm2__inner {
+    padding: 0 24px;
+  }
+  .cm2__title {
+    font-size: 40px;
+  }
+  .cm2__lead {
+    max-width: 470px;
+    font-size: 15px;
+  }
+  .cm2__card {
+    padding: 32px 30px;
+  }
+  .cm2__map {
+    min-height: 420px;
+  }
+  .cm2__map-card {
+    left: 18px;
+    right: auto;
+    bottom: 18px;
+    width: 284px;
+  }
+}
+
+/* ≥1024px: card left, map right */
+@media (min-width: 1024px) {
+  .cm2__header {
+    margin-bottom: 44px;
+  }
+  .cm2__grid {
+    grid-template-columns: minmax(280px, 1fr) minmax(0, 2fr);
+    gap: 18px;
+  }
+}

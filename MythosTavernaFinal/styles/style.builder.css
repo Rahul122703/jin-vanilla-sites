@@ -1,0 +1,296 @@
+@keyframes notif-marquee-continuous {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+.notif-animate-marquee {
+  animation: notif-marquee-continuous var(--marquee-speed, 25s) linear infinite;
+}
+.notif-marquee-container {
+  mask-image: linear-gradient(
+    to right,
+    transparent,
+    black 5%,
+    black 95%,
+    transparent
+  );
+  -webkit-mask-image: linear-gradient(
+    to right,
+    transparent,
+    black 5%,
+    black 95%,
+    transparent
+  );
+}
+
+@keyframes gallery5-marquee-up {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-50%);
+  }
+}
+@keyframes gallery5-marquee-down {
+  0% {
+    transform: translateY(-50%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+.gallery5-marquee-up {
+  animation: gallery5-marquee-up 30s linear infinite;
+}
+.gallery5-marquee-down {
+  animation: gallery5-marquee-down 30s linear infinite;
+}
+/* Hold still while pointed at, or while a photo is being edited. */
+.gallery5-marquee-up:hover,
+.gallery5-marquee-down:hover,
+.gallery5-marquee-up:focus-within,
+.gallery5-marquee-down:focus-within {
+  animation-play-state: paused;
+}
+/* Below lg the vertical columns give way to two horizontal rows, built
+   from the same photos by script.builder.js: row 1 drifts left to right,
+   row 2 right to left. */
+@keyframes gallery5-marquee-right {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes gallery5-marquee-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+.gallery5-rows {
+  display: none;
+}
+@media (max-width: 1023.98px) {
+  [data-gallery5-root] {
+    height: auto;
+    overflow: visible;
+  }
+  [data-gallery5-root] > [data-motion="column"] {
+    display: none;
+  }
+  .gallery5-rows {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    flex: none;
+    width: 100vw;
+    margin-inline: calc(50% - 50vw);
+    overflow: hidden;
+  }
+  .gallery5-track {
+    display: flex;
+    width: max-content;
+  }
+  .gallery5-set {
+    display: flex;
+    gap: 16px;
+    padding-right: 16px;
+  }
+  .gallery5-set > [data-lightbox-index] {
+    width: 240px;
+    height: 180px;
+  }
+  .gallery5-marquee-right {
+    animation: gallery5-marquee-right 45s linear infinite;
+  }
+  .gallery5-marquee-left {
+    animation: gallery5-marquee-left 45s linear infinite;
+  }
+  .gallery5-marquee-right:hover,
+  .gallery5-marquee-left:hover,
+  .gallery5-marquee-right:focus-within,
+  .gallery5-marquee-left:focus-within {
+    animation-play-state: paused;
+  }
+}
+@media (min-width: 640px) and (max-width: 1023.98px) {
+  .gallery5-set > [data-lightbox-index] {
+    width: 300px;
+    height: 220px;
+  }
+}
+/* Deliberately not stopped by prefers-reduced-motion: Windows turns
+             that on with "Animation effects" off, and the columns then
+             silently never moved. "Scroll Photos Automatically?" is the off
+             switch. */
+
+[data-gallery-lightbox="on"] [data-lightbox-index] {
+  cursor: zoom-in;
+}
+.fgr-lb {
+  position: fixed;
+  inset: 0;
+  z-index: 2147483000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  padding: 64px 16px 24px;
+  box-sizing: border-box;
+  overflow: hidden;
+  color: #fff;
+  font-family: inherit;
+}
+.fgr-lb[hidden],
+.fgr-lb [hidden] {
+  display: none !important;
+}
+.fgr-lb__backdrop {
+  position: absolute;
+  inset: 0;
+}
+.fgr-lb__stage {
+  position: relative;
+  flex: 1 1 0;
+  min-height: 0;
+  width: 100%;
+  max-width: 1200px;
+}
+.fgr-lb__img {
+  position: absolute;
+  inset: 0;
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  margin: auto;
+  object-fit: contain;
+  border-radius: 8px;
+  box-shadow: 0 20px 50px rgb(0 0 0 / 0.45);
+  user-select: none;
+  -webkit-user-drag: none;
+}
+.fgr-lb__btn {
+  position: absolute;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  border: 1px solid rgb(255 255 255 / 0.3);
+  border-radius: 9999px;
+  background: rgb(0 0 0 / 0.35);
+  color: #fff;
+  cursor: pointer;
+  -webkit-backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px);
+  transition: background-color 0.2s;
+}
+.fgr-lb__btn:hover {
+  background: rgb(0 0 0 / 0.6);
+}
+.fgr-lb__btn:focus-visible,
+.fgr-lb__thumb:focus-visible {
+  outline: 2px solid #fff;
+  outline-offset: 2px;
+}
+.fgr-lb__close {
+  top: 12px;
+  right: 12px;
+}
+.fgr-lb__prev,
+.fgr-lb__next {
+  top: 50%;
+  transform: translateY(-50%);
+}
+.fgr-lb__prev {
+  left: 12px;
+}
+.fgr-lb__next {
+  right: 12px;
+}
+.fgr-lb__counter {
+  position: absolute;
+  top: 24px;
+  left: 16px;
+  z-index: 1;
+  font-size: 14px;
+  opacity: 0.85;
+  font-variant-numeric: tabular-nums;
+}
+.fgr-lb__caption {
+  position: relative;
+  flex: none;
+  width: 100%;
+  max-width: 800px;
+  height: 3em;
+  margin: 0;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  text-align: center;
+  font-size: 15px;
+  line-height: 1.5;
+}
+.fgr-lb__thumbs {
+  position: relative;
+  flex: none;
+  display: flex;
+  gap: 8px;
+  max-width: 100%;
+  overflow-x: auto;
+  padding: 4px;
+}
+.fgr-lb__thumb {
+  flex: none;
+  width: 64px;
+  height: 48px;
+  padding: 0;
+  overflow: hidden;
+  border: 2px solid transparent;
+  border-radius: 6px;
+  background: none;
+  opacity: 0.55;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+.fgr-lb__thumb:hover {
+  opacity: 0.85;
+}
+.fgr-lb__thumb[aria-current="true"] {
+  border-color: #fff;
+  opacity: 1;
+}
+.fgr-lb__thumb img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+@media (min-width: 768px) {
+  .fgr-lb {
+    padding-left: 88px;
+    padding-right: 88px;
+  }
+  .fgr-lb__prev {
+    left: 24px;
+  }
+  .fgr-lb__next {
+    right: 24px;
+  }
+  .fgr-lb__btn {
+    width: 52px;
+    height: 52px;
+  }
+}
