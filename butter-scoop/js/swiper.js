@@ -10,6 +10,14 @@ if (".slider-page-title-home".length > 0) {
             nextEl: ".page-title-next",
             prevEl: ".page-title-prev",
         },
+        on: {
+            slideChange: function () {
+                var bgs = document.querySelectorAll(".page-title-home .hero-bg");
+                bgs.forEach(function (bg, i) {
+                    bg.classList.toggle("is-active", i === this.realIndex % bgs.length);
+                }, this);
+            },
+        },
     });
 }
 

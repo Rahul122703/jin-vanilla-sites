@@ -10,6 +10,13 @@
   object-fit: cover;
   z-index: 0;
 }
+.page-title-home .hero-bg {
+  opacity: 0;
+  transition: opacity 0.8s ease;
+}
+.page-title-home .hero-bg.is-active {
+  opacity: 1;
+}
 .page-title-home .swiper-container {
   position: relative;
   z-index: 1;
