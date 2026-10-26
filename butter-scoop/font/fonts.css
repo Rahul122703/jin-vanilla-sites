@@ -43,7 +43,7 @@ font-family: 'CormorantInfant';
 font-style: normal;
 font-weight: 200;
 font-display: swap;
-src: url('CormorantInfant-Light.ttf') format('truetype');
+src: url('cormorantinfant-light.ttf') format('truetype');
 }
 
 @font-face {
@@ -51,7 +51,7 @@ font-family: 'CormorantInfant';
 font-style: italic;
 font-weight: 200;
 font-display: swap;
-src: url('CormorantInfant-LightItalic.ttf') format('truetype');
+src: url('cormorantinfant-lightitalic.ttf') format('truetype');
 }
 
 @font-face {
@@ -59,7 +59,7 @@ font-family: 'CormorantInfant';
 font-style: normal;
 font-weight: 400;
 font-display: swap;
-src: url('CormorantInfant-Regular.ttf') format('truetype');
+src: url('cormorantinfant-regular.ttf') format('truetype');
 }
 
 @font-face {
@@ -67,7 +67,7 @@ font-family: 'CormorantInfant';
 font-style: italic;
 font-weight: 400;
 font-display: swap;
-src: url('CormorantInfant-Italic.ttf') format('truetype');
+src: url('cormorantinfant-italic.ttf') format('truetype');
 }
 
 @font-face {
@@ -75,7 +75,7 @@ font-family: 'CormorantInfant';
 font-style: normal;
 font-weight: 500;
 font-display: swap;
-src: url('CormorantInfant-Medium.ttf') format('truetype');
+src: url('cormorantinfant-medium.ttf') format('truetype');
 }
 
 @font-face {
@@ -83,7 +83,7 @@ font-family: 'CormorantInfant';
 font-style: italic;
 font-weight: 500;
 font-display: swap;
-src: url('CormorantInfant-MediumItalic.ttf') format('truetype');
+src: url('cormorantinfant-mediumitalic.ttf') format('truetype');
 }
 
 @font-face {
@@ -91,7 +91,7 @@ font-family: 'CormorantInfant';
 font-style: normal;
 font-weight: 600;
 font-display: swap;
-src: url('CormorantInfant-SemiBold.ttf') format('truetype');
+src: url('cormorantinfant-semibold.ttf') format('truetype');
 }
 
 @font-face {
@@ -99,7 +99,7 @@ font-family: 'CormorantInfant';
 font-style: italic;
 font-weight: 600;
 font-display: swap;
-src: url('CormorantInfant-SemiBoldItalic.ttf') format('truetype');
+src: url('cormorantinfant-semibolditalic.ttf') format('truetype');
 }
 
 @font-face {
@@ -107,7 +107,7 @@ font-family: 'CormorantInfant';
 font-style: normal;
 font-weight: 700;
 font-display: swap;
-src: url('CormorantInfant-Bold.ttf') format('truetype');
+src: url('cormorantinfant-bold.ttf') format('truetype');
 }
 
 @font-face {
@@ -115,7 +115,7 @@ font-family: 'CormorantInfant';
 font-style: italic;
 font-weight: 700;
 font-display: swap;
-src: url('CormorantInfant-BoldItalic.ttf') format('truetype');
+src: url('cormorantinfant-bolditalic.ttf') format('truetype');
 }
 
 /* Caprasimo */
@@ -125,5 +125,5 @@ font-family: 'Caprasimo';
 font-style: normal;
 font-weight: 400;
 font-display: swap;
-src: url('Caprasimo-Regular.ttf') format('truetype');
+src: url('caprasimo-regular.ttf') format('truetype');
 }
