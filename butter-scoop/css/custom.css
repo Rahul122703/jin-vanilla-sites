@@ -21,6 +21,15 @@
   position: relative;
   z-index: 1;
 }
+/* Dark overlay above the hero images, below the text */
+.page-title-home::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.45);
+  pointer-events: none;
+  z-index: 0;
+}
 
 .text-white {
   color: white;
