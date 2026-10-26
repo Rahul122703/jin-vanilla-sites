@@ -1,0 +1,31 @@
+.tf-accordion {
+    .accordion-item:not(:last-child) {
+        margin-bottom: 14px;
+    }
+    .accordion-header {
+        border-radius: 30px;
+        .title {
+            padding: 17px 0 18px 40px;
+            font-weight: 600;
+            cursor: pointer;
+            position: relative;
+            letter-spacing: -0.7px;
+            @include flex(center, space-between);
+            gap: 10px;
+            i {
+                font-size: 17px;
+                margin-right: 45px;
+                @include transition3();
+            }
+            &:not(.collapsed) {
+                color: var(--White);
+                i {
+                    transform: rotate(-180deg);
+                }
+            }
+        }
+    }
+    .body-text {
+        padding: 30px 63px 31px 41px;
+    }
+}

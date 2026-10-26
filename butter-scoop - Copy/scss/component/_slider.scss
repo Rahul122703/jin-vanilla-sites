@@ -1,0 +1,114 @@
+.swiper-container {
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    overflow: hidden;
+    list-style: none;
+    padding: 0;
+    z-index: 1;
+}
+
+.page-title-home {
+    .button {
+        border-radius: 999px;
+        color: var(--White);
+        background-color: var(--color-1);
+        @include transition3();
+        height: 51px;
+        width: 51px;
+        transform: scale(1.3);
+        &.swiper-button-disabled {
+            height: 51px;
+            width: 51px;
+            transform: unset;
+            background-color: var(--Secondary-color);
+        }
+        &:hover {
+            background-color: var(--color-1);
+        }
+    }
+    .swiper-button-prev {
+        left: calc(3% + 5px);
+        top: calc(64% + 9px);
+        &::after {
+            display: none;
+        }
+    }
+    .swiper-button-next {
+        left: calc(3% + 6px);
+        top: calc(55% + 5px);
+        &::after {
+            display: none;
+        }
+    }
+}
+
+.style-btn-slide {
+    .button {
+        border-radius: 999px;
+        color: var(--White);
+        background-color: var(--Secondary-color);
+        @include transition3();
+        height: 51px;
+        width: 51px;
+        transform: scale(1.3);
+        top: 50%;
+        &.swiper-button-disabled {
+            height: 51px;
+            width: 51px;
+            transform: unset;
+            background-color: var(--Bg-main-2);
+        }
+        &:hover {
+            background-color: var(--Bg-main-2);
+        }
+    }
+    .swiper-button-prev {
+        left: -80px;
+        &::after {
+            display: none;
+        }
+    }
+    .swiper-button-next {
+        right: -80px;
+        &::after {
+            display: none;
+        }
+    }
+}
+
+.section-our-product {
+    .swiper-slide {
+        width: auto;
+    }
+}
+
+.slide-effect-fade {
+    .swiper-slide {
+        .fade-item {
+            transform: translateY(100px);
+            opacity: 0;
+            visibility: hidden;
+            @include transition3();
+        }
+        &.swiper-slide-active {
+            .fade-item {
+                transform: translateY(0);
+                opacity: 1;
+                visibility: visible;
+                &.fade-item1 {
+                    transition-delay: 0.2s;
+                }
+                &.fade-item2 {
+                    transition-delay: 0.4s;
+                }
+                &.fade-item3 {
+                    transition-delay: 0.6s;
+                }
+                &.fade-item4 {
+                    transition-delay: 0.8s;
+                }
+            }
+        }
+    }
+}

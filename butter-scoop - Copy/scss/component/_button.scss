@@ -1,0 +1,76 @@
+.tf-btn {
+    @include flex(center, center);
+    position: relative;
+    font-size: 13px;
+    font-weight: 700;
+    border-radius: 999px;
+    text-transform: uppercase;
+    color: var(--White) !important;
+    transform: translate3d(0, 4px, 0);
+    z-index: 5;
+    max-width: max-content;
+    background-color: var(--color-3);
+    cursor: pointer;
+    span {
+        @include flex(center, center);
+        background-color: var(--Secondary-color);
+        background-color: var(--Secondary-color);
+        padding: 0px 35px;
+        height: 50px;
+        border-radius: 999px;
+        transform: translate3d(0, -5px, 0);
+        z-index: -1;
+        letter-spacing: 1.3px;
+        transition: transform 0.3s cubic-bezier(0.7, 0, 0.2, 1);
+        i {
+            font-size: 20px;
+        }
+    }
+    &.bg-2 {
+        background-color: var(--color-4);
+        span {
+            background-color: var(--color-1);
+        }
+    }
+    &:hover {
+        span {
+            transform: translate3d(-0, -0, 0);
+        }
+    }
+}
+.tf-btn-default {
+    @include d-flex();
+    align-items: center;
+    gap: 7px;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--White) !important;
+    @include transition3();
+    &:hover {
+        span {
+        }
+        i {
+            animation: 0.3s link linear;
+        }
+    }
+}
+
+@keyframes link {
+    0% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    49% {
+        transform: translateX(20px);
+        opacity: 0;
+    }
+    50% {
+        transform: translateX(-20px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
