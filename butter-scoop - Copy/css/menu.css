@@ -1,20 +1,20 @@
 @font-face {
   font-family: "Audrey";
-  src: url("../font/Audrey-Regular.otf") format("opentype");
+  src: url("../font/audrey-normal.otf") format("opentype");
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Audrey";
-  src: url("../font/Audrey-Bold.otf") format("opentype");
+  src: url("../font/audrey-bold.otf") format("opentype");
   font-weight: 700;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Audrey";
-  src: url("../font/Audrey-Medium.otf") format("opentype");
+  src: url("../font/audrey-medium.otf") format("opentype");
   font-weight: 500;
   font-style: normal;
 }
