@@ -163,22 +163,17 @@
   grid-template-rows: repeat(4, auto);
   grid-auto-flow: column;
   justify-content: center;
-  gap: 71px 60px;
+  gap: 71px 30px;
   position: relative;
   z-index: 1;
 }
 .section-category-product .menu-columns .image-wrap img {
   display: block;
   width: auto;
-  max-width: 100%;
-  max-height: 190px;
+  max-width: 92%;
+  max-height: 165px;
   height: auto;
   margin: 0 auto;
-}
-@media (max-width: 991px) {
-  .section-category-product .menu-columns {
-    column-gap: 30px;
-  }
 }
 @media (max-width: 767px) {
   .section-category-product .menu-columns {
