@@ -168,8 +168,12 @@
   z-index: 1;
 }
 .section-category-product .menu-columns .image-wrap img {
-  width: 100%;
+  display: block;
+  width: auto;
+  max-width: 100%;
+  max-height: 190px;
   height: auto;
+  margin: 0 auto;
 }
 @media (max-width: 991px) {
   .section-category-product .menu-columns {
