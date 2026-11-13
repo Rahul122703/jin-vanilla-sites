@@ -152,3 +152,33 @@
 .elfsight-app-34a112ef-8e3d-417d-8b0e-301632e81129 {
   padding-top: 60px;
 }
+
+/* Menu: 3 columns (Bread / Cream Filled / Sandwich), filled top-to-bottom.
+   Rows line up so cards in a row share a height, like the original grid;
+   .style-2 cards are offset 30px and .spacing-* breads pop out of the card.
+------------------------------------------------------------------------*/
+.section-category-product .menu-columns {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 270px));
+  grid-template-rows: repeat(4, auto);
+  grid-auto-flow: column;
+  justify-content: center;
+  gap: 71px 30px;
+  position: relative;
+  z-index: 1;
+}
+.section-category-product .menu-columns .image-wrap img {
+  display: block;
+  width: auto;
+  max-width: 92%;
+  max-height: 165px;
+  height: auto;
+  margin: 0 auto;
+}
+@media (max-width: 767px) {
+  .section-category-product .menu-columns {
+    grid-template-columns: minmax(0, 340px);
+    grid-template-rows: none;
+    grid-auto-flow: row;
+  }
+}
