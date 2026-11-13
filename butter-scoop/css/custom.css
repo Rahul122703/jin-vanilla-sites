@@ -152,3 +152,41 @@
 .elfsight-app-34a112ef-8e3d-417d-8b0e-301632e81129 {
   padding-top: 60px;
 }
+
+/* Menu: one column per category (Bread / Cream Filled / Sandwich), items run top-to-bottom.
+   Cards keep the original box-item size (~270px wide, image full width, popping out on .style-2)
+------------------------------------------------------------------------*/
+.section-category-product .menu-columns {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 270px));
+  justify-content: center;
+  column-gap: 60px;
+  position: relative;
+  z-index: 1;
+}
+.section-category-product .menu-column {
+  display: flex;
+  flex-direction: column;
+  gap: 71px;
+}
+.section-category-product .menu-column .box-item {
+  margin: 0;
+}
+.section-category-product .menu-column .box-item.style-2:first-child {
+  margin-top: 30px;
+}
+.section-category-product .menu-column .image-wrap img {
+  width: 100%;
+  height: auto;
+}
+@media (max-width: 991px) {
+  .section-category-product .menu-columns {
+    column-gap: 30px;
+  }
+}
+@media (max-width: 767px) {
+  .section-category-product .menu-columns {
+    grid-template-columns: minmax(0, 340px);
+    row-gap: 71px;
+  }
+}
