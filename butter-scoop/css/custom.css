@@ -153,29 +153,21 @@
   padding-top: 60px;
 }
 
-/* Menu: one column per category (Bread / Cream Filled / Sandwich), items run top-to-bottom.
-   Cards keep the original box-item size (~270px wide, image full width, popping out on .style-2)
+/* Menu: 3 columns (Bread / Cream Filled / Sandwich), filled top-to-bottom.
+   Rows line up so cards in a row share a height, like the original grid;
+   .style-2 cards are offset 30px and .spacing-* breads pop out of the card.
 ------------------------------------------------------------------------*/
 .section-category-product .menu-columns {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 270px));
+  grid-template-rows: repeat(4, auto);
+  grid-auto-flow: column;
   justify-content: center;
-  column-gap: 60px;
+  gap: 71px 60px;
   position: relative;
   z-index: 1;
 }
-.section-category-product .menu-column {
-  display: flex;
-  flex-direction: column;
-  gap: 71px;
-}
-.section-category-product .menu-column .box-item {
-  margin: 0;
-}
-.section-category-product .menu-column .box-item.style-2:first-child {
-  margin-top: 30px;
-}
-.section-category-product .menu-column .image-wrap img {
+.section-category-product .menu-columns .image-wrap img {
   width: 100%;
   height: auto;
 }
@@ -187,6 +179,7 @@
 @media (max-width: 767px) {
   .section-category-product .menu-columns {
     grid-template-columns: minmax(0, 340px);
-    row-gap: 71px;
+    grid-template-rows: none;
+    grid-auto-flow: row;
   }
 }
